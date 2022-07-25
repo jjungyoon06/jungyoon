@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="이정윤 - 프로필 링크">
+    <meta property="og:description" content="이정윤 포트폴리오">
+    <meta property="og:image" content="yoon.jpeg">
+    <title>Main</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <style>
+        /* 사진 */
+        .profile{
+            width: 300px; height: 300px; 
+            border-radius: 30px;
+            border: 2px solid white;
+            background-image: url(./img/prof.jpg);
+            background-position: center;
+            background-size: cover;
+            position: absolute; top: 200px; left: 100px;
+        }
+        /* 링크 */
+        .wrap{
+            width: 250px;
+            margin: 30px auto 0px auto; padding: 20px;
+            border: 1px solid #ff8868; border-radius: 20px;
+            position: absolute; bottom: 100px; right: 200px;
+        }
+        .wrap > a{
+            width: 200px;
+            height: 50px;
+           
+            background-color: #ee9982;
+            border-radius: 8px;
+
+            margin-bottom: 10px;
+
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none; 
+            box-shadow: 3px 3px 5px 0px black;
+        }
+        .wrap > a:hover{
+            background-color: #f09a72;
+        }
+        h2{text-align: center;}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- header 영역 -->
+        <header>
+            <!-- nav bar -->
+            <nav>             
+                <!-- gnb -->
+                <div class="gnb">
+                    <a href="./main.html">Main</a>
+                    <a href="./resume.html">Resume</a>
+                    <a href="./project.html">Project</a>
+                    <a href="./introduce.html">introduce</a>
+                </div>
+                <!-- lnb -->
+                <div class="lnb">
+                <a href="mailto:jylee1501@naver.com">jylee1501@naver.com</a>
+                </div>
+            </nav>
+        </header>
+        <section>
+                <div class="profile"></div> 
+                <div class="wrap">
+                    <h2>Link</h2>
+                    <a target="_blank" href="https://github.com/jjungyoon06/jungyoon">github</a>
+                    <a target="_blank" href="https://blog.naver.com/jylee1501">blog</a>
+                    <a target="_blank" href="https://www.notion.so/Start-939c43033a024eb0bc512037cdb6d99c">notion</a>
+                    <a target="_blank" href="https://www.instagram.com/jyoon_toon/">instagram</a>
+                </div>   
+                   
+        </section>
+    </div>
+</body>
+</html>
