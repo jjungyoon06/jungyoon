@@ -7,39 +7,84 @@
     <title>Resume</title>
     <link rel="stylesheet" href="./css/header.css">
     <style>
-        .name{font-size: 40px; font-weight: bold; text-align: center;}
+        img{width: 300px; height: 300px; border: 3px dotted rgb(247, 247, 134); border-radius: 10px;
+            position: absolute; top: 460px; left:800px; }
+        /* 설명 */
+        .theme{ font-size: 25px; font-weight: bold; margin-bottom: -10px; text-align: center;}
+        .exp{font-size: 15px; color: gray; font-weight: bold; text-align: center;}
+        .exp1{font-size: 15px; color: rgb(177, 176, 176); font-weight: bold; text-align: center; margin-top: -20px;}
+        
+        /* 소개 */
+        .me{
+            width: 600px; height: 300px; padding: 0px 20px; margin: 20px 20px;
+            position: absolute; top: 80px; left: 650px;
+            border: 1px dashed #ff8868; border-radius: 20px;
+        }
+        .mi{ width: 150px; height: 70px; padding: 0px 20px; margin: 10px;
+            border: 1px solid white; border-radius: 20px; font-size: 15px; 
+            float: left; text-align: center;}
+
+        /* 밑줄 */
+        .mark {background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);}
+        .mark2 {background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #d5f8b5 50%);}
+        .mark3 {background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #e1c2f3 50%);}
+        .mark4 {background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #9ddef1);}
+        .mark5 {background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #f8f082);}
+
+        /* 대외활동 */
+        .social{
+            width: 560px; height: 300px; padding: 0px 20px; margin: 20px 20px;
+            border: 1px dashed  #ff8868; border-radius: 20px; position: absolute; top: 210px; left: 80px;
+        }
+        .soc{
+            width: 150px; height: 70px; padding: 0px 20px; margin: 10px;
+            border: 1px solid white; border-radius: 20px; font-size: 12px; 
+            float: left; text-align: center; 
+        }
+
+        /* 근무 */
+        .work{
+            width: 360px; height: 300px; padding: 0px 20px; margin: 20px 20px;
+            border: 1px dashed #ff8868; border-radius: 20px; position: absolute; top: 600px; left: 100px;
+        }
+        .list{
+            width: 135px; height: 70px; padding: 0px 20px; margin: 10px;
+            border: 1px solid white; border-radius: 20px; font-size: 12px; 
+            float: left; color: black
+        }
+
+        /* 공부 */
         .skills{
-            width: 400px; height: 200px; padding: 0px 20px;
-            border: 1px solid #ff8868; border-radius: 20px;
-            position: absolute; top: 300px; right: 300px;
+            width:360px; height: 280px; padding: 0px 20px;
+            border: 1px dashed #ff8868; border-radius: 20px;
+            position: absolute; top: 250px; right: 200px;
             margin: -20px;
         }
         .skill2{
-            width: 200px; height: 200px; padding: 0px 25px;
-            border: 1px solid #ff8868; border-radius: 20px;
-            position: absolute; top: 500px; right: 300px;
+            width: 262px; height: 200px; padding: 0px 25px;
+            border: 1px dashed #ff8868; border-radius: 20px;
+            position: absolute; top: 650px; right: 200px;
         }
-        .sk{
-            width: 70px; height: 80px; color: white;
+        .sk,.sk-1, .sk-2{
+            width: 70px; height: 80px; color: black;
             border: 1px solid white; border-radius: 20px;
-            float: left; text-align: center; line-height: 80px;
-            background-color: #fcb8a5;
+            float: left; text-align: center; line-height: 80px; margin-left: 5px;
         }
-        .social{
-            width: 500px; height: 380px; padding: 0px 20px; margin: 20px 20px;
-            border: 1px solid #ff8868; border-radius: 20px;
+        .sk-1{font-size: 15px;}
+        .sk-2{margin-right: 10px; margin-left: 20px;}
+
+        /* 외국어 */
+        .language{
+            width: 490px; height: 180px; padding: 0px 20px;
+            border: 1px dashed #ff8868; border-radius: 20px;
+            position: absolute; top: 820px; right: 700px;
+            margin: -20px;
         }
-        p{font-size: 25px; margin: 10px;}
-        .work{
-            width: 450px; height: 250px; padding: 0px 20px; margin: 20px 20px;
-            border: 1px solid #ff8868; border-radius: 20px;
+        .lan{
+            width: 110px; height: 60px; color: black;
+            border: 1px solid white; border-radius: 20px;
+            float: left; text-align: center; line-height: 60px;
         }
-        .list{
-            width: 400px; height: 30px; padding: 0px 20px; margin: 10px;
-            border: 1px solid #ff8868; border-radius: 20px;
-        }
-        
-        
     </style>
 </head>
 <body>
@@ -53,7 +98,7 @@
                     <a href="./main.html">Main</a>
                     <a href="./resume.html">Resume</a>
                     <a href="./project.html">Project</a>
-                    <a href="./introduce.html">introduce</a>
+                    <a href="./interview.html">Interview</a>
                 </div>
                 <!-- lnb -->
                 <div class="lnb">
@@ -62,40 +107,61 @@
             </nav>
         </header>
         <section>
-            <p class="name">About Me</p>
-            <div class="info">
-                <h3>1995.12.03</h3>
-            </div>
-            <div class="skills">
-                <h2>Skills</h2>
-                <div class="sk">HTML</div>
-                <div class="sk">CSS</div>
-                <div class="sk">JS</div>
-                <div class="sk">React</div>
-                <div class="sk">JAVA</div>
-            </div>
-            <div class="skill2">
-                <h2>Soon</h2>
-                <div class="sk">Vue</div>
-                <div class="sk">Flutter</div>
+            <img src="./img/jungyoon.jpg" alt="jungyoon">
+            <div class="me">
+                <p class="theme"><b>저를 소개합니다!</b></p>
+                    <p class="exp">#도전 #긍정 #자기계발 #꼼꼼 #협동 #성장</p>
+                    <div class="mi"><b><mark class="mark5">Name</mark></b><br> 이정윤 </div>
+                    <div class="mi"><b><mark class="mark5">Birth</mark></b><br> 1995.12.03 </div>
+                    <div class="mi"><b><mark class="mark5">MBTI</mark></b><br> ESFP </div>
+                    <div class="mi"><b><mark class="mark5">Major</mark></b><br> 국제관광학 </div>
+                    <div class="mi"><b><mark class="mark5">Hobby</mark></b><br> 외국어 여행 그림 </div>
+                    <div class="mi"><b><mark class="mark5">Dream</mark></b><br> 세계여행 N잡러 </div>
             </div>
             <div class="social">
-                    <h3><b>Social Experience</b></h3>
-                    <div class="list">중국 어학연수 2019.03-2020.01</div>
-                    <div class="list">2017.05-2017.07 한국관광공사 코트파</div>
-                    <div class="list">2016.06-2016.07 서울 문화의 밤 프렌즈</div>
-                    <div class="list">2016.04-2016.06 한국국제관광전 코트파</div>
-                    <div class="list">2015.02-2016.02 대학연합 봉사동아리 활동</div>
-                    <div class="list">2014.12-2015.01 굿네이버스 봉사활동</div>
-                    <div class="list">2014.03-2014.11 인천아시안게임 서포터즈</div>
+                    <p class="theme"><b>Social Experience</b></p>
+                    <p class="exp">다양한 대외활동으로 팀워크 정신과 커뮤니케이션 능력을 길렀어요.</p>
+                    <div class="soc"><b><mark class="mark">한국관광공사 방랑탁객</mark></b><br> 2017.05-2017.07 </div>
+                    <div class="soc"><b><mark class="mark">서울 문화의 밤 프렌즈</mark></b><br>2016.06-2016.07 </div>
+                    <div class="soc"><b><mark class="mark">한국국제관광전 코트파</mark></b><br> 2016.04-2016.06 </div>
+                    <div class="soc"><b><mark class="mark">대학연합 봉사동아리</mark></b><br> 2015.02-2016.02 </div>
+                    <div class="soc"><b><mark class="mark">굿네이버스 봉사활동</mark></b><br> 2014.12-2015.01 </div>
+                    <div class="soc"><b><mark class="mark">인천아시안게임 서포터</mark></b><br> 2014.03-2014.11 </div>
                 </ul>
             </div>
             <div class="work">
-                    <h3><b>Work Experience</b></h3>
-                    <div class="list">2021.08-2022.03 프레쉬코리아</div>
-                    <div class="list">2020.05-2021.04 록시땅코리아</div>
-                    <div class="list">2018.08-2019.02 CJ 올리브영</div>
-                    <div class="list">2015.01-2015.02 더 리버사이드 호텔 실습</div>
+                    <p class="theme"><b>Work Experience</b></p>
+                    <p class="exp">서비스업과 화장품업계에서 근무했어요.</p>
+                    <div class="list"><b><mark class="mark2">Fresh</mark> </b><br>2021.08-2022.03 </div>
+                    <div class="list"><b><mark class="mark2">Loccitane</mark></b><br> 2020.05-2021.04 </div>
+                    <div class="list"><b><mark class="mark2">CJ 올리브네트웍스</mark></b><br> 2018.08-2019.02 </div>
+                    <div class="list"><b><mark class="mark2">더 리버사이드 호텔</mark></b><br> 2015.01-2015.02 </div>
+            </div>
+            <div class="language">
+                    <p class="theme"><b>Languages</b></p>
+                    <p class="exp">실력 향상을 위해 열심히 공부하고 있어요.</p>
+                    <div class="lan"><b><mark class="mark3">English</mark></b></div>
+                    <div class="lan"><b><mark class="mark3">Chinese</mark></b></div>
+                    <div class="lan"><b><mark class="mark3">Japanese</mark></b></div>
+                    <div class="lan"><b><mark class="mark3">Spanish</mark></b></div>
+            </div>
+            <div class="skills">
+                <p class="theme"><b>Skills</b></p>
+                <p class="exp">하이미디어 컴퓨터학원에서 풀스택 과정을 수료했어요.</p>
+                <div class="sk"><b><mark class="mark4">HTML</mark></b></div>
+                <div class="sk"><b><mark class="mark4">CSS</mark></b></div>
+                <div class="sk"><b><mark class="mark4">JS</mark></b></div>
+                <div class="sk"><b><mark class="mark4">JAVA</mark></b></div>
+                <div class="sk"><b><mark class="mark4">JSP</mark></b></div>
+                <div class="sk"><b><mark class="mark4">Spring</mark></b></div>
+                <div class="sk-1"><b><mark class="mark4">Spr.boot</mark></b></div>
+                <div class="sk-1"><b><mark class="mark4">Android</mark></b></div>
+            </div>
+            <div class="skill2">
+                <p class="theme"><b>Soon</b></p>
+                <p class="exp">인프런과 유튜브로 독학하고 있어요.</p>
+                <div class="sk-2"><b><mark class="mark4">React</mark></b></div>
+                <div class="sk-2"><b><mark class="mark4">Flutter</mark></b></div>
             </div>
         </section>
     </div>
