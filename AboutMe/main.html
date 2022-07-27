@@ -10,7 +10,15 @@
     <title>Main</title>
     <link rel="stylesheet" href="./css/header.css">
     <style>
-        /* 사진 */
+        .container2{
+            margin: 0 auto; width: 1400px; height: 800px; 
+            border: 1px dashed #f09a72; border-radius: 10px; margin-top: 50px; position: relative;
+        }
+        
+        .intro1{font-size: 60px; margin: 20px; padding: 20px; position: absolute; top: 100px; right: 90px;}
+        .intro2{font-size: 80px; margin: 20px; padding: 20px; position: absolute; top: 200px; right: 100px;}
+        .intro3{font-size: 90px; margin: 20px; padding: 20px; position: absolute; top: 300px; right: 90px;}
+        /* 프로필사진 */
         .profile{
             width: 300px; height: 300px; 
             border-radius: 30px;
@@ -18,38 +26,24 @@
             background-image: url(./img/prof.jpg);
             background-position: center;
             background-size: cover;
-            position: absolute; top: 200px; left: 100px;
+            position: absolute; top: 120px; left: 100px;
         }
-        /* 링크 */
-        .wrap{
-            width: 300px;
-            margin: 30px auto 0px auto; padding: 20px;
-            border: 1px solid #ff8868; border-radius: 20px;
-            position: absolute; bottom: 100px; right: 200px;
+        /* 링크이미지 */
+        .link{
+            width: 80px; height: 80px; border-radius: 10px; border: 2px solid white;
+            background-image: url(./img/GitHub-Mark.png); background-position: center;background-size: cover;
         }
-        h2{text-align: center; font-weight: bold;}
-        .wrap > p{color: gray; font-size: 15px; text-align: center;}
-        .wrap > a{
-            width: 250px;
-            height: 50px;
-           
-            background-color: #ee9982;
-            border-radius: 8px;
-
-            margin-bottom: 10px;
-
-            font-size: 14px;
-            font-weight: bold;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none; 
-            box-shadow: 3px 3px 5px 0px black;
+        .link{
+            width: 80px; height: 80px; border-radius: 10px; border: 2px solid white;
+            background-image: url(./img/blog.png); background-position: center;background-size: cover;
         }
-        .wrap > a:hover{
-            background-color: #f09a72;
+        .link{
+            width: 80px; height: 80px; border-radius: 10px; border: 2px solid white;
+            background-image: url(./img/Notion_app_logo.png); background-position: center;background-size: cover;
+        }
+        .link{
+            width: 80px; height: 80px; border-radius: 10px; border: 2px solid white;
+            background-image: url(./img/instagram.png); background-position: center;background-size: cover;
         }
         
         
@@ -75,16 +69,17 @@
             </nav>
         </header>
         <section>
-                <div class="profile"></div> 
-                <div class="wrap">
-                    <h2>Link</h2>
-                    <p>링크를 누르면 사이트로 이동됩니다!</p>
-                    <a target="_blank" href="https://github.com/jjungyoon06/jungyoon">github</a>
-                    <a target="_blank" href="https://blog.naver.com/jylee1501">blog</a>
-                    <a target="_blank" href="https://www.notion.so/Start-939c43033a024eb0bc512037cdb6d99c">notion</a>
-                    <a target="_blank" href="https://www.instagram.com/jyoon_toon/">instagram</a>
-                </div>   
-                   
+                <div class="container2">
+                    <div class="intro1">여행을 좋아하는</div>
+                    <div class="intro2"><b>프론트엔드 개발자</b></div>
+                    <div class="intro3">이정윤입니다</div>
+                </div> 
+                <div class="link"></div> 
+                    <a target="_blank" href="https://github.com/jjungyoon06/jungyoon"></a>
+                    <a target="_blank" href="https://blog.naver.com/jylee1501"></a>
+                    <a target="_blank" href="https://www.notion.so/Start-939c43033a024eb0bc512037cdb6d99c"></a>
+                    <a target="_blank" href="https://www.instagram.com/jyoon_toon/"></a>
+                 
         </section>
     </div>
 </body>
