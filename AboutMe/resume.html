@@ -7,23 +7,55 @@
     <title>Resume</title>
     <link rel="stylesheet" href="./css/header.css">
     <style>
-        img{width: 300px; height: 300px; border: 3px dotted rgb(247, 247, 134); border-radius: 10px;
-            position: absolute; top: 460px; left:800px; }
-        /* 설명 */
-        .theme{ font-size: 25px; font-weight: bold; margin-bottom: -10px; text-align: center;}
-        .exp{font-size: 15px; color: gray; font-weight: bold; text-align: center;}
-        .exp1{font-size: 15px; color: rgb(177, 176, 176); font-weight: bold; text-align: center; margin-top: -20px;}
-        
-        /* 소개 */
-        .me{
-            width: 600px; height: 300px; padding: 0px 20px; margin: 20px 20px;
-            position: absolute; top: 80px; left: 650px;
-            border: 1px dashed #ff8868; border-radius: 20px;
+        .container2{
+            margin: 0 auto; width: 1000px; height: 1000px; 
+            margin-top: 50px; position: relative;
         }
-        .mi{ width: 150px; height: 70px; padding: 0px 20px; margin: 10px;
-            border: 1px solid white; border-radius: 20px; font-size: 15px; 
+        img{width: 150px; height: 150px; position: absolute; top: 30px; left: 5px; border-radius: 100%; }
+
+        /* 설명 */
+        .theme{ font-size: 20px; font-weight: bold; margin-bottom: -10px; text-align: center;}
+        .exp{font-size: 13px; color: gray; font-weight: bold; text-align: center;}
+
+        /* 소개 */
+        .me{width: 730px; height: 220px; padding: 0px 20px; margin: 20px 20px;
+            border: 1px dashed #ff8868; border-radius: 20px;
+            position: absolute; top: 15px; left: 170px;}
+        .mi{ width: 100px; height: 70px; padding: 0px 10px; margin: 5px; font-size: 12px; 
             float: left; text-align: center;}
 
+        /* 공부 */
+        .skills{ width: 730px; height: 200px; padding: 0px 20px; margin: 20px;
+                 border: 1px dashed #ff8868; border-radius: 20px;
+                 position: absolute; top: 250px; left: 170px; }
+        .sk{ width: 70px; height: 70px; color: black;
+            float: left; text-align: center; line-height: 70px; margin: 10px;}
+
+        /* 근무 */
+        .work{ width: 730px; height: 220px; padding: 0px 10px; margin: 20px 20px;
+               border: 1px dashed #ff8868; border-radius: 20px; 
+               position: absolute; top: 465px; left: 170px;}
+        .list{ width: 150px; height: 70px; padding: 0px 10px; margin: 10px; font-size: 12px; 
+               float: left; text-align: center;}
+
+        /* 외국어 */
+        .language{
+            width: 730px; height: 200px; padding: 0px 20px; margin: 20px;
+            border: 1px dashed #ff8868; border-radius: 20px;
+            position: absolute; top: 700px; left: 170px;}
+        .lan{
+            width: 130px; height: 40px; padding: 0 20px; margin: 20px; font-size: 17px;
+            float: left; text-align: center;}
+        /* 대외활동 */
+        .social{
+            width: 730px; height: 300px; padding: 0px 70px; margin: 20px 20px;
+            border: 1px dashed  #ff8868; border-radius: 20px; position: absolute; top: 915px; left: 170px;
+        }
+        .soc{
+            width: 170px; height: 70px; padding: 0px 20px; margin: 10px; font-size: 12px; 
+            float: left; text-align: center; 
+        }
+        
         /* 밑줄 */
         .mark {background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);}
         .mark2 {background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #d5f8b5 50%);}
@@ -31,60 +63,9 @@
         .mark4 {background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #9ddef1);}
         .mark5 {background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #f8f082);}
 
-        /* 대외활동 */
-        .social{
-            width: 560px; height: 300px; padding: 0px 20px; margin: 20px 20px;
-            border: 1px dashed  #ff8868; border-radius: 20px; position: absolute; top: 210px; left: 80px;
-        }
-        .soc{
-            width: 150px; height: 70px; padding: 0px 20px; margin: 10px;
-            border: 1px solid white; border-radius: 20px; font-size: 12px; 
-            float: left; text-align: center; 
-        }
-
-        /* 근무 */
-        .work{
-            width: 360px; height: 300px; padding: 0px 20px; margin: 20px 20px;
-            border: 1px dashed #ff8868; border-radius: 20px; position: absolute; top: 600px; left: 100px;
-        }
-        .list{
-            width: 135px; height: 70px; padding: 0px 20px; margin: 10px;
-            border: 1px solid white; border-radius: 20px; font-size: 12px; 
-            float: left; color: black
-        }
-
-        /* 공부 */
-        .skills{
-            width:360px; height: 280px; padding: 0px 20px;
-            border: 1px dashed #ff8868; border-radius: 20px;
-            position: absolute; top: 250px; right: 200px;
-            margin: -20px;
-        }
-        .skill2{
-            width: 262px; height: 200px; padding: 0px 25px;
-            border: 1px dashed #ff8868; border-radius: 20px;
-            position: absolute; top: 650px; right: 200px;
-        }
-        .sk,.sk-1, .sk-2{
-            width: 70px; height: 80px; color: black;
-            border: 1px solid white; border-radius: 20px;
-            float: left; text-align: center; line-height: 80px; margin-left: 5px;
-        }
-        .sk-1{font-size: 15px;}
-        .sk-2{margin-right: 10px; margin-left: 20px;}
-
-        /* 외국어 */
-        .language{
-            width: 490px; height: 180px; padding: 0px 20px;
-            border: 1px dashed #ff8868; border-radius: 20px;
-            position: absolute; top: 820px; right: 700px;
-            margin: -20px;
-        }
-        .lan{
-            width: 110px; height: 60px; color: black;
-            border: 1px solid white; border-radius: 20px;
-            float: left; text-align: center; line-height: 60px;
-        }
+        
+       
+       
     </style>
 </head>
 <body>
@@ -107,7 +88,8 @@
             </nav>
         </header>
         <section>
-            <img src="./img/jungyoon.jpg" alt="jungyoon">
+            <div class="container2">
+            <img src="./img/3.jpg" alt="jungyoon">
             <div class="me">
                 <p class="theme"><b>저를 소개합니다!</b></p>
                     <p class="exp">#도전 #긍정 #자기계발 #꼼꼼 #협동 #성장</p>
@@ -118,16 +100,16 @@
                     <div class="mi"><b><mark class="mark5">Hobby</mark></b><br> 외국어 여행 그림 </div>
                     <div class="mi"><b><mark class="mark5">Dream</mark></b><br> 세계여행 N잡러 </div>
             </div>
-            <div class="social">
-                    <p class="theme"><b>Social Experience</b></p>
-                    <p class="exp">다양한 대외활동으로 팀워크 정신과 커뮤니케이션 능력을 길렀어요.</p>
-                    <div class="soc"><b><mark class="mark">한국관광공사 방랑탁객</mark></b><br> 2017.05-2017.07 </div>
-                    <div class="soc"><b><mark class="mark">서울 문화의 밤 프렌즈</mark></b><br>2016.06-2016.07 </div>
-                    <div class="soc"><b><mark class="mark">한국국제관광전 코트파</mark></b><br> 2016.04-2016.06 </div>
-                    <div class="soc"><b><mark class="mark">대학연합 봉사동아리</mark></b><br> 2015.02-2016.02 </div>
-                    <div class="soc"><b><mark class="mark">굿네이버스 봉사활동</mark></b><br> 2014.12-2015.01 </div>
-                    <div class="soc"><b><mark class="mark">인천아시안게임 서포터</mark></b><br> 2014.03-2014.11 </div>
-                </ul>
+            <div class="skills">
+                <p class="theme"><b>Skills</b></p>
+                <p class="exp">하이미디어 컴퓨터학원에서 풀스택 과정을 수료했어요. ( 2022.05 ~ 2022. 10 )</p>
+                <div class="sk"><b><mark class="mark4">HTML</mark></b></div>
+                <div class="sk"><b><mark class="mark4">CSS</mark></b></div>
+                <div class="sk"><b><mark class="mark4">JS</mark></b></div>
+                <div class="sk"><b><mark class="mark4">JAVA</mark></b></div>
+                <div class="sk"><b><mark class="mark4">JSP</mark></b></div>
+                <div class="sk"><b><mark class="mark4">Spring</mark></b></div>
+                <div class="sk"><b><mark class="mark4">Android</mark></b></div>
             </div>
             <div class="work">
                     <p class="theme"><b>Work Experience</b></p>
@@ -145,24 +127,18 @@
                     <div class="lan"><b><mark class="mark3">Japanese</mark></b></div>
                     <div class="lan"><b><mark class="mark3">Spanish</mark></b></div>
             </div>
-            <div class="skills">
-                <p class="theme"><b>Skills</b></p>
-                <p class="exp">하이미디어 컴퓨터학원에서 풀스택 과정을 수료했어요.</p>
-                <div class="sk"><b><mark class="mark4">HTML</mark></b></div>
-                <div class="sk"><b><mark class="mark4">CSS</mark></b></div>
-                <div class="sk"><b><mark class="mark4">JS</mark></b></div>
-                <div class="sk"><b><mark class="mark4">JAVA</mark></b></div>
-                <div class="sk"><b><mark class="mark4">JSP</mark></b></div>
-                <div class="sk"><b><mark class="mark4">Spring</mark></b></div>
-                <div class="sk-1"><b><mark class="mark4">Spr.boot</mark></b></div>
-                <div class="sk-1"><b><mark class="mark4">Android</mark></b></div>
-            </div>
-            <div class="skill2">
-                <p class="theme"><b>Soon</b></p>
-                <p class="exp">인프런과 유튜브로 독학하고 있어요.</p>
-                <div class="sk-2"><b><mark class="mark4">React</mark></b></div>
-                <div class="sk-2"><b><mark class="mark4">Flutter</mark></b></div>
-            </div>
+            <div class="social">
+                    <p class="theme"><b>Social Experience</b></p>
+                    <p class="exp">다양한 대외활동으로 팀워크 정신과 커뮤니케이션 능력을 길렀어요.</p>
+                    <div class="soc"><b><mark class="mark">한국관광공사 방랑탁객</mark></b><br> 2017.05-2017.07 </div>
+                    <div class="soc"><b><mark class="mark">서울 문화의 밤 프렌즈</mark></b><br>2016.06-2016.07 </div>
+                    <div class="soc"><b><mark class="mark">한국국제관광전 코트파</mark></b><br> 2016.04-2016.06 </div>
+                    <div class="soc"><b><mark class="mark">대학연합 봉사동아리</mark></b><br> 2015.02-2016.02 </div>
+                    <div class="soc"><b><mark class="mark">굿네이버스 봉사활동</mark></b><br> 2014.12-2015.01 </div>
+                    <div class="soc"><b><mark class="mark">인천아시안게임 서포터</mark></b><br> 2014.03-2014.11 </div>
+                </ul>
+            </div> 
+        </div>
         </section>
     </div>
 </body>
