@@ -1,6 +1,5 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 * {font-family: "Pretendard",serif; }
-/* 전체 바디영역 */
 * {box-sizing: border-box;}
 
 body {
@@ -11,7 +10,7 @@ body {
    background-color: white;
    font-weight: 300;
 }
-a {
+.nav_list {
    text-decoration: none;
    color: white;
 }
