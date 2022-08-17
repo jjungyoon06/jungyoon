@@ -10,3 +10,4 @@ console.log(bgImage);
 
 //js로 body에 html을 추가함
 document.body.appendChild(bgImage);
+
