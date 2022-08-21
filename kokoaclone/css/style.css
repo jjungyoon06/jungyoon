@@ -1,0 +1,12 @@
+body{
+    background-color: tomato;
+}
+.status-bar{
+    /* 화면에 같은 줄에 나란히 정렬 */
+    display: flex; 
+    /* flex의 축을 따라 같은 간격으로 나란히 떨어뜨리기  */
+    justify-content: space-between;
+}
+.stutus-bar_column:first-child span{
+    margin-right: 5px;
+}
