@@ -1,43 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "./reset.css";
-@import "./status-bar.css";
 @import "./variables.css";
+/* components */
+@import "./component/status-bar.css";
+@import "./component/nav-bar.css";
+@import "./component/screen-header.css";
+@import "./component/user-component.css";
+/* screens */
+@import "./screens/login.css";
+@import "./screens/friends.css";
+
 body {
+    color: #2e363e;
   font-family: "Open Sans", sans-serif;
-}
-.welcome-header{
-    margin: 90px 0px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} 
-.welcome-header__title{
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-.welcome-header__text{
-    width: 60%;
-    opacity: 0.7;
-}
-
-#login-form{
-    display: flex;
-    flex-direction: column;
-    margin: 0px 30px;
-}
-
-#login-form input{
-    border: none;
-    font-size: 18px;
-    padding: 15px 0px;
-    border-bottom: 2px solid rgba(0,0,0,0.2);
-    margin-bottom: 25px;
-}
-
-#login-form input::placeholder{
-    color: rgba(0,0,0,0.4);
-}
-#login-form input:focus{
-    border-color: rgba(0,0,0,0.4);
 }
