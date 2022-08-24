@@ -35,5 +35,13 @@
     font-weight: 400;
 }
 .user-component__column:last-child{
-    columns: rgba(0,0,0,0.5);
+    columns: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.user-component__time{
+    margin: 10px;
+    display: block;
+   
 }
