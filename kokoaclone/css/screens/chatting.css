@@ -1,0 +1,62 @@
+#chat-screen{
+    background-color: #abc1d1;
+    /* 채팅창 스크롤 조절 가능하도록 height길게~ */
+    height: 11000vh; 
+}
+#chat-screen .alt-header, #chat-screen .status-bar{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #abc1d1;
+    box-sizing: border-box; /* 화면 다 보이게 조절 */
+} 
+#chat-screen .status-bar{
+    /* layer 순서 */
+    z-index: 2;
+}
+#chat-screen .alt-header{
+    top: 10px;
+    z-index: 1;
+}
+.main-chat{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chat__timestamp{
+    color: white;
+    background-color: #92a4b2;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+.message-row{
+    width: 100%;
+    display: flex;
+}
+.message-row img{
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.message__author{
+    margin-bottom: 5px;
+    display: block;
+}
+.message__info{
+    display: flex;
+    align-items: flex-end;
+}
+.message__bubble{
+    background-color: white;
+    padding: 13px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+}
+.message__author, .message__time{
+    opacity: 0.8;
+    font-size: 13px;
+}

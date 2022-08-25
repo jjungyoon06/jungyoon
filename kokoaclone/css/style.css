@@ -7,9 +7,15 @@
 @import "./component/screen-header.css";
 @import "./component/user-component.css";
 @import "./component/badge.css";
+@import "./component/icon-row.css";
+@import "./component/alt-screen-header.css";
 /* screens */
 @import "./screens/login.css";
 @import "./screens/friends.css";
+@import "./screens/find.css";
+@import "./screens/more.css";
+@import "./screens/setting.css";
+@import "./screens/chatting.css";
 
 body {
     color: #2e363e;
