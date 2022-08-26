@@ -23,3 +23,30 @@
     justify-content: space-between;
     color: rgba(0,0,0,0.5);
 }
+
+/* 노란 화면 사라지는 애니메이션 */
+@keyframes hideSplashScreen{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+/* 이 화면을 지나 friends.html이 나와요 (friends.html cover 했음!) */
+#splash-screen{
+    background-color: var(--yellow);
+    position: absolute;
+    /* 화면넓이, 높이의 100% */
+    width: 100vw; 
+    height: 100vh; 
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 128px;
+    animation-delay: 1s;
+    animation: hideSplashScreen 1s ease-in-out forwards;
+    /* forwards : 애니메이션 마지막 속성이 유지됨 - 노란화면이 사라진게 계속 유지됨! */
+}
