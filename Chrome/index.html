@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Momentum App</title>
+    <title>Make a best day</title>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
+    <div class="all">
+        <h2 id="clock">00:00:00</h2>
     <form class="hidden" id="login-form">
         <input
         required
@@ -17,9 +18,10 @@
         <input type="submit" value="Log In" />
     </form>
     <h1 class="hidden" id="greeting"></h1>
-<form id="todo-form">
+    <form id="todo-form">
+    <h3>Today my to do list</h2>
     <input type="text" placeholder="Write a To Do and Press Enter" required />
-</form>
+    </form>
     <ul id="todo-list"></ul>
     <div id="quote">
         <span></span>
@@ -29,6 +31,8 @@
         <span></span>
         <span></span>
     </div>
+    </div>
+    
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quote.js"></script>
