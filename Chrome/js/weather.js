@@ -23,5 +23,5 @@ function onGeoError() {
 }
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 
-//주소창 입력
-//https://api.openweathermap.org/data/2.5/weather?lat=37.5030996&lon=126.8789772&appid=aa177cea535f054317087570fe1f0b3c
+/*주소창 입력
+https://api.openweathermap.org/data/2.5/weather?lat=37.5030996&lon=126.8789772&appid=aa177cea535f054317087570fe1f0b3c*/

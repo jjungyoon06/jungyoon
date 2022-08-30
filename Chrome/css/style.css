@@ -1,25 +1,68 @@
 .hidden{ display: none;}
 *{margin: 0 auto; position: relative;}
+.all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
+}
+#weather{
+    position: absolute;
+    top: 50px;
+    font-size: 12px;
+}
 #clock{
     font-size: 80px;
-    /* position: absolute; top: 50%; left: 50%; */
+    opacity: 80%;
+    position: absolute;
+    top: 120px;
+}
+#greeting{
+    position: absolute;
+    top: 250px;
 }
 input{
     width: 300px; height: 40px;
     border: 1px solid lightgray;
-    border-radius: 10px;
-    /* position: absolute; top: 60%; left: 50%; */
+    border-radius: 15px;
+    position: absolute;
+    top: 300px; left: -150px;
+}
+
+#todo-list{
+    position: absolute;
+    top: 380px;
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    text-align:left;
+    color: black;
 }
 button{
     width: 20px; height: 20px;
     border: 1px solid white;
     background-color: white;
     border-radius: 10px;
-    line-height: 7px;
-    font-size: 15px;
-    margin: 0px 10px;
+    line-height: 3px;
+    font-size: 13px;
+    margin: 5px;
+    padding: 1px;
 }
 #quote{
-    /* position: absolute; top: 80%; left: 50%; */
-    font-size: 35px;
+    font-size: 20px;
+    position: absolute;
+    top: 700px;
+    opacity: 60%;
 }
