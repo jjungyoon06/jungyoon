@@ -3,6 +3,14 @@
     justify-content: space-between;
     padding-bottom: 25px;
 }
+.find-icons .skills{
+    width: 60px; 
+    height: 60px;
+}
+.find-icons .skills , .js{
+    border-radius: 50%;
+}
+
 .find-icons__icon{
     display: flex;
     flex-direction: column;
