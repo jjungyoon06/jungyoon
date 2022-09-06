@@ -1,7 +1,7 @@
-const morebtn = document.querySelector('.info .metadata .moreBtn');
+const moreBtn = document.querySelector('.info .metadata .moreBtn');
 const title = document.querySelector('.info .metadata .title');
 
-morebtn.addEventListener('click', () => {
-    morebtn.classList.toggle('clicked');
-    title.classList.toggle('clamp');
+moreBtn.addEventListener('click', () => {
+  moreBtn.classList.toggle('clicked');
+  title.classList.toggle('clamp');
 });

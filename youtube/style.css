@@ -1,43 +1,44 @@
- /* 변수 정의 */
 :root{
+    /* 변수 정리 */
     /* color */
     --white-color: #fff;
     --black-color: #140a00;
     --blue-color: #045fd4;
     --red-color: #ff0000;
-    --grey-dark-color: #909090;
-    --grey-light-color: #e0e0e0;
+    --gray-dark-color: #909090;
+    --gray-light-color: #e0e0e0;
 
     /* size */
-    --side-padding : 12px;
+    --padding: 12px;
     --image-size: 36px;
 
-    /* font-size */
+    /* font size */
     --font-large: 18px;
     --font-medium: 14px;
     --font-small: 12px;
     --font-micro: 10px;
-}
 
-*{
-    padding: 0; margin: 0; 
-    box-sizing: border-box;  /* padding margin 포함해 사이즈 결정 */
 }
-
 body{
-    font-family: Roboto;
+    font-family: 'Open Sans';
 }
 li{
     list-style: none;
 }
-
-button, button:focus{
-   border: none;
-   cursor: pointer;
-   outline: none;
+button,
+button:focus{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--white-color);
 }
 
-/* header */
+*{  
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -55,65 +56,45 @@ header .icons .fa-search{
     margin-right: var(--padding);
 }
 
-/* sass&less */
-/*
-header{
-    .logo{
-
-    }
-    .icons{
-
-    }
-}
-*/
-
 /* video */
 .player{
-    /* 스크롤에도 비디오 위치 고정되도록 */
     position: sticky;
     top: 0;
-
-    width: 1000px;
-    height: 500px;
     text-align: center;
     background-color: var(--black-color);
 }
-/* 반응형으로 만들기 */
-.player video{
+.player iframe{
     width: 100%;
     height: 100%;
     max-width: 1000px;
 }
-
-body > .info{
+.infoAndUpNext .info{
     padding: var(--padding);
 }
 
+/* metadata */
 .info .metadata .hashtags{
     display: flex;
     font-size: var(--font-small);
     color: var(--blue-color);
 }
-
 .info .metadata .hashtags li{
     margin-right: var(--padding);
 }
-
 .info .metadata .titleAndButton{
     display: flex;
 }
-
 .info .metadata .titleAndButton .title{
     font-size: var(--font-medium);
     margin-right: var(--padding);
 }
-.info .metadata .titleAndButton .title .clamp{
-    /* title 줄 최대 2줄 제한 */
+.info .metadata .titleAndButton .title.clamp{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
 }
+
 .info .metadata .titleAndButton .moreBtn{
     height: 100%;
     transition: transform 300ms ease-in-out;
@@ -121,29 +102,25 @@ body > .info{
 .info .metadata .titleAndButton .moreBtn .clicked{
     transform: rotate(180deg);
 }
-.info .views{
+.info .metadata .views{
     font-size: var(--font-small);
-    color: var(--grey-dark-color);
+    color: var(--gray-dark-color);
 }
 
-/* action buttons */
-.info .actions{
+/* actions */
+ .info .actions{
     display: flex;
     justify-content: space-around;
     margin: var(--padding) 0;
 }
-
 .info .actions button{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* icon 위로 text 아래로 */
     font-size: var(--font-small);
-    color: var(--grey-dark-color);
+    color: var(--gray-dark-color);
 }
-
 .info .actions button i{
-    /* 중앙정렬 */
-    margin: 0 auto;
-
+    margin: 0 auto;/* 아이템 정 중앙으로 */
     margin-bottom: calc(var(--padding)/2);
     font-size: 16px;
 }
@@ -151,90 +128,87 @@ body > .info{
     color: var(--blue-color);
 }
 
-/* channel description */
+/* channel */
 .info .channel{
     display: flex;
     justify-content: space-between;
-    border-top: 1px soild var(--grey-light-color);
-    border-bottom: 1px soild var(--grey-light-color);
+    border-top: 1px solid var(--gray-light-color);
+    border-bottom: 1px solid var(--gray-light-color);
 }
 .info .channel .metadata{
     display: flex;
-    /* 수직 정렬 */
     align-items: center;
+    padding: calc(var(--padding)/2);
+}
+.info .channel .metadata .info{
+    display: flex;
+    flex-direction: column;
 }
 .info .channel .metadata img{
     width: var(--image-size);
     height: var(--image-size);
     border-radius: 50%;
-}
-.info .channel .metadata .info{
-    display: flex;
-    flex-direction: column;
+    margin-right: var(--padding);
 }
 .info .channel .metadata .info .name{
     font-size: var(--font-medium);
 }
 .info .channel .metadata .info .subscribers{
     font-size: var(--font-small);
-    color: var(--grey-dark-color);
+    color: var(--gray-dark-color);
 }
 .info .channel .subscribe{
-    text-transform: uppercase; /* 대문자로 변환 */
     color: var(--red-color);
     font-size: var(--font-medium);
 }
 
-/* Up next */
+/* upNext */
 .upNext{
-    padding: 0 var(--padding);
+    padding: var(--padding);
 }
-
 .upNext > .title{
     font-size: var(--font-medium);
-    color: var(--grey-dark-color);
+    color: var(--gray-dark-color);
     margin-bottom: calc(var(--padding)/2);
 }
 .upNext .item{
     display: flex;
     margin-top: var(--padding);
 }
-.upNext .item .img{
-    /* 줄어들 때 늘어날 때 기본값 */
-    flex: 1 1 35%;
+.upNext .item .image{
+    flex-basis: 35%;
     margin-right: var(--padding);
 }
-.upNext .item .img img{
-    /* 줄어들 때 늘어날 때 기본값 */
+.upNext .item .image img{
     width: 100%;
 }
 .upNext .item .info{
-    flex: 1 1 60%;
-}
-.upNext .item .moreBtn{
-    flex: 1 1 5%;
-}
-.upNext .item .info{
+    flex-basis: 60%;
     display: flex;
     flex-direction: column;
+}
+.upNext .item .moreBtn{
+    flex-basis: 5%;
+    height: 100%;
 }
 .upNext .item .info .title{
     font-size: var(--font-small);
 }
-
 .upNext .item .info .name,
 .upNext .item .info .views{
     font-size: var(--font-micro);
-    color: var(--grey-dark-color);
+    color: var(--gray-dark-color);
 }
 .infoAndUpNext{
     display: flex;
     flex-direction: column;
-}
+} 
 
 @media screen and (min-width: 768px){
     .infoAndUpNext{
         flex-direction: row;
-        margin: var(--padding) 0;
+    }
+    .upNext{
+        padding: var(--padding);
     }
 }
