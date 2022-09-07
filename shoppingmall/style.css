@@ -86,3 +86,13 @@ body{
     margin-left: var(--base-space);
     font-size: var(--font-size);
 }
+
+@media screen and (min-width : 768px){
+    .item{
+        border-radius: 15px;
+        display: inline-block;
+        width: 30%;
+        height: 30%;
+        background-color: rgb(242, 201, 197);
+    }
+}
