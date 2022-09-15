@@ -1,0 +1,89 @@
+:root{
+    /* color */
+    --color-yellow: #f8e21e;
+    --color-white: #ffffff;
+    --color-black: #1d1b1b;
+    --color-gray: #bbb8b8;
+
+    /* fontsize */
+    --font-large: 50px;
+    --font-medium: 24px;
+    --font-small: 18px;
+    --font-micro: 14px;
+
+}
+/* 전체 */
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+h1{
+    font-size: var(--font-large);
+}
+h2{}
+h3{}
+h4{}
+p{}
+li{list-style: none;}
+a{text-decoration: none;}
+/* navbar */
+#navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background-color: pink;
+}
+.navbar_logo{
+    
+}
+.navbar_menu{
+    color: var(--color-white);
+    display: flex;
+    font-size: var(--font-medium);
+
+}
+.navbar_menu_detail li{
+    display: none;
+}
+/* slide*/
+/* info */
+#info{
+    background-color: yellow;
+}
+/* news */
+#news{
+    background-color: green;
+}
+/* footer */
+#footer{
+    background-color: var(--color-black);
+    padding: 60px 30px;
+    position: relative;
+}
+.navbar_logo{
+    font-size: var(--font-large);
+    color: var(--color-white);
+}
+.navbar_logo a{
+    color: var(--color-white);
+}
+.site{
+    display: flex;
+    justify-content: space-between;
+}
+.family_site{
+    position: absolute;
+    right: 200px; bottom: 200px;
+    color: var(--color-gray);    
+}
+.link{
+    position: absolute;
+    bottom: 80px; right: 50px;
+    font-size: var(--font-medium);
+}
+.link i{
+    color: var(--color-white);
+}
