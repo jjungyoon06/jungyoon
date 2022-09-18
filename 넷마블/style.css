@@ -26,7 +26,6 @@ h2{
     margin-top: 40px;
     color: var(--color-black);
 }
-
 li{list-style: none;}
 a{text-decoration: none;}
 /* navbar */
@@ -38,6 +37,7 @@ a{text-decoration: none;}
     align-items: center;
     padding: 18px;
     background-color: pink;
+    z-index: 0;
 }
 .navbar_logo{
     font-size: var(--font-large);
@@ -47,7 +47,7 @@ a{text-decoration: none;}
     color: var(--color-white);
 }
 .navbar_logo i:hover{
-    color: #f8e21e;
+    color: var(--color-yellow);
 }
 .navbar_logo a{
     color: var(--color-white);
@@ -79,23 +79,51 @@ a{text-decoration: none;}
 }
 /* info */
 #info{
-    background-color: var(--color-white)
+    background-color: var(--color-white);
     width: 100%;
-    height: 2000px;
+    height: 2800px;
     position: relative;
+}
+.yellow_line_1{
+    position: absolute;
+    top: 240px;
+    left: 50px;
+    border: 1px solid var(--color-yellow);
+    background-color: var(--color-yellow);
+    width: 100px;
+    height: 10px;
+}
+.info_detail{
+    float: right;
+    font-size: var(--font-small);
+    position: absolute;
+    top: 400px;
+    right: 80px;
 }
 #photo{
     display: flex;
+    position: absolute;
+    top: 700px;
+    left: 60px;
+}
+#photo > i{
+    font-size: var(--font-micro);
+    position: absolute;
+    left: 160px;
+    top: 700px;
+}
+#photo p{
+    font-size: var(--font-small);
 }
 #photo img{
     width: 550px;
     height: 650px;
-    margin: 0px 10px;
+    margin: 0px 30px;
 }
 
 .yellow_box{
-    border: 1px solid yellow;
-    background-color: yellow;
+    border: 1px solid var(--color-yellow);
+    background-color: var(--color-yellow);
     margin: 0px 400px 0px 30px;
     width: 1400px;
     height: 400px;
@@ -121,12 +149,12 @@ a{text-decoration: none;}
 }
 /* news */
 #news{
-    background-color: rgb(247, 241, 241);
+    background-color: rgb(244, 244, 242);
     width: 100%;
     height: 1200px;
     position: relative;
 }
-.theme_two{
+.theme{
     font-size: var(--font-big-large);
     color: var(--color-black);
     float: left;
@@ -134,15 +162,15 @@ a{text-decoration: none;}
     top: 100px;
     left: 50px;
 }
-.yellow_line{
+.yellow_line_2{
     float: left;
     position: absolute;
     top: 170px;
     left: 50px;
     width: 100px;
     height: 10px;
-    border: 1px solid #f8e21e;
-    background-color: #f8e21e;
+    border: 1px solid var(--color-yellow);
+    background-color:  var(--color-yellow);
 }
 .news_menu{
     display: flex;
@@ -172,7 +200,7 @@ a{text-decoration: none;}
     
 }
 .program_box{
-    border: 1px solid white;
+    border: 1px solid var(--color-white);
     border-radius: 10px;
     background-color: var(--color-white);
     width: 500px;
@@ -183,6 +211,15 @@ a{text-decoration: none;}
 }
 .program_box h2{
     padding: 20px;
+}
+.program_smallBox{
+    width: 420px;
+    height: 20px;
+    border: 1px solid rgb(62, 25, 25);
+    background-color: rgb(62, 25, 25);
+    position: absolute;
+    left: 40px;
+    bottom: 170px;
 }
 .program_box img{
     width: 500px;
