@@ -1,21 +1,35 @@
-.navbar{
-
-}
-
-.logo{
-    width: 1280px;
-    float: left;
-}
-
+body{font-family: 'Noto Sans KR', sans-serif;};
+/* navbar */
 .gnb{
     float: right;
-    width: 30%;
 }
 .gnb ul li{
     list-style: none;
     float: left;
-    margin: 0px 30px;
+    color: #1e1e1e;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    box-sizing: border-box;
 }
+/* slide */
 .slide{
     height: 100vh;
 }
+/* home */
+.home{
+    clear: both;
+}
+.title_01{
+    font-size: 44px;
+    font-weight: 700;
+    float: left;
+    clear: both;
+}
+.title_02{
+    float: right;
+}
+.link{
+    float: left;
+}
+/* footer */
