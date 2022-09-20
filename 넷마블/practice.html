@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넷마블</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <style>
+        /* reset  */
+        *{ 
+            margin: 0;padding: 0;
+        }
+        li{ 
+            list-style: none;
+        }
+        .clearfix:after{ 
+            content:"";display: block;clear: both;
+        }
+        a:link,a:visited{ 
+            text-decoration: none;
+            color:#333
+        }
+
+
+        /* navbar  */
+        .navWrap{ 
+            position: fixed;
+            width: 100%;
+            background: white;
+        }
+        .navbar{ 
+            width: 1280px;
+            margin: 0 auto;
+            background: skyblue;
+        }
+        .navbar h1{ 
+            float: left;
+        }
+        .navbar .gnb{ 
+            float:right
+        }
+        .gnb li{ 
+            float: left;
+            width:150px
+        }
+
+        .gnb li a{ 
+            display: block;
+            text-align: center;
+            line-height: 45px;
+        }
+        .gnb li a:hover{ 
+            background: orange;
+        }
+
+
+        /* visual  */
+        .visual{ 
+            height: 100vh;
+            background-image: url(https://sgimage.netmarble.com/images/netmarble/foundation/20210208/1612777894232/banner01.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: conver;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="navWrap">
+        <div class="navbar clearfix">
+            <h1><a href="#">넷마블</a></h1>
+            <div class="gnb">
+                <ul class="clearfix">
+                    <li><a href="#">재단소개</a></li>
+                    <li><a href="#">재단활동</a></li>
+                    <li><a href="#">재단소식</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="visual">
+
+    </div>
+
+
+</body>
+
+</html>

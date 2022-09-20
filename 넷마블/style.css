@@ -1,53 +1,57 @@
-body{font-family: 'Noto Sans KR', sans-serif;};
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
+
+/* 전체 reset */
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a:link,a:visited{ 
+    text-decoration: none;
+    color:#333;
+    cursor: pointer;
+}
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+
 /* navbar */
-.navbar{
+.navWrap{
+    position: fixed;
     width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
+    background: transparent;
 }
-.nav{
-    clear: both;
-    width: 1280px;
+.navWrap:hover{
+    background: white;
 }
-.logo{
+.navbar h1{
     float: left;
 }
-.navbar .nav .logo a{
-    text-decoration: none;
+.navbar h1 a{
+    background: url(./image/bi.6acdb84.png) no-repeat;
+    background-size: 165px auto;
 }
-.gnb{
+.navbar .gnb{
     float: right;
 }
-.gnb ul li{
-    list-style: none;
+.gnb li{
     float: left;
-    display: inline-block;
-    color: #1e1e1e;
-    font-size: 20px;
-    font-weight: 700;
-    box-sizing: border-box;
+    width: 150px;
 }
-.gnb ul li a{
-    text-decoration: none;
+.gnb li a{ 
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    line-height: 45px;
+}
+.gnb li a:hover{
+    color: black;
+}
+.clearfix{
+    content:""; clear: both; display: block;
 }
 /* slide */
-
-/* home */
-.title{
-    float: left;
-    clear: both;
+.slide{
+    height: 100vh;
+    background-image: url(./image/banner01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.title_01{
-    font-size: 44px;
-    font-weight: 700;
-}
-.title_02{
-    font-size: 18px;
-    padding-left: 624px;
-}
-.link_list{
-   clear: both;
-   float: left;
-}
-
-/* footer */
