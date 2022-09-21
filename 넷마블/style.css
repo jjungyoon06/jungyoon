@@ -9,8 +9,9 @@ a:link,a:visited{
     cursor: pointer;
 }
 body{font-family: 'Noto Sans KR', sans-serif;}
-
-
+.clearfix::after{
+    content:""; clear: both; display: block;
+}
 /* navbar */
 .navWrap{
     position: fixed;
@@ -20,12 +21,19 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .navWrap:hover{
     background: white;
 }
+.navbar{
+    width: 1280px;
+    margin: 0 auto;
+}
 .navbar h1{
     float: left;
 }
 .navbar h1 a{
-    background: url(./image/bi.6acdb84.png) no-repeat;
+    background: url(./image/bi-dark.9d78fda.png) no-repeat;
     background-size: 165px auto;
+}
+.navbar h1 a:hover{
+    background: url(./image/bi.6acdb84.png) no-repeat;
 }
 .navbar .gnb{
     float: right;
@@ -44,9 +52,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .gnb li a:hover{
     color: black;
 }
-.clearfix{
-    content:""; clear: both; display: block;
-}
+
 /* slide */
 .slide{
     height: 100vh;
@@ -55,3 +61,47 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* home */
+.home{
+    width: 1280px;
+    margin: 0 auto;
+}
+.title{
+
+}
+.title_01{
+    float: left;
+}
+.title_02{
+    float: right;
+}
+.link{
+    width: 1280px;
+    margin: 0 auto;
+}
+.link_list a{
+    float: left;
+}
+.thumb1{
+    background-image: url(./image/link01.8c7a40e.jpg) no-repeat;
+    width: 100%;
+    height: 450px;
+    margin-right: ;
+}
+.thumb2{
+    background-image: url(./image/link02.b7f7bba.jpg) no-repeat;
+    width: 100%;
+    height: 450px;
+}
+.thumb3{
+    background-image: url(./image/link03.73d78ef.jpg) no-repeat;
+    width: 100%;
+    height: 450px;
+}
+.link_list .txtbox .tit{
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 700;
+    padding-right: 28px;
+}   
