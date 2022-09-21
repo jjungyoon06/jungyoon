@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset  */
+        html,body{height: 100%;}
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        ul,li{list-style: none;}
+        a:link,a:visited{text-decoration: none; color:#333}
+        .clearfix:after{content:"";display: block;clear: both;}
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nav{width: 500px;}
+        /*( 500 - 30 ) / 4 */
+        .nav li{
+            float: left;
+            width:calc( 100% / 4 - 30px );
+            background: pink;
+            margin-right: 10px;
+        }
+        .nav li:last-child{margin-right: 0;}
+        .nav li a{
+            display: block;
+            background: skyblue;
+            line-height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="clearfix">
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
 
 /* 전체 reset */
+html,body{height: 100%;}
 *{margin: 0; padding: 0;}
 li{list-style: none;}
 a:link,a:visited{ 
     text-decoration: none;
     color:#333;
-    cursor: pointer;
 }
 body{font-family: 'Noto Sans KR', sans-serif;}
 .clearfix::after{
     content:""; clear: both; display: block;
 }
+
+
 /* navbar */
 .navWrap{
     position: fixed;
@@ -21,9 +23,13 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .navWrap:hover{
     background: white;
 }
-.navbar{
+.navbar, .link, .home{
     width: 1280px;
     margin: 0 auto;
+}
+h1{
+    width: 330px;
+    height: 70px;
 }
 .navbar h1{
     float: left;
@@ -63,45 +69,60 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 }
 
 /* home */
-.home{
-    width: 1280px;
-    margin: 0 auto;
-}
-.title{
-
-}
 .title_01{
     float: left;
+    font-size: 44px;
+    font-weight: bold;
 }
 .title_02{
     float: right;
+    font-size: 18px;
 }
 .link{
-    width: 1280px;
-    margin: 0 auto;
+    background-color: #333;
 }
-.link_list a{
+.link li{
     float: left;
+    width:calc( 100% / 3 - 40px );
+    margin-right: 20px;
 }
-.thumb1{
-    background-image: url(./image/link01.8c7a40e.jpg) no-repeat;
-    width: 100%;
-    height: 450px;
-    margin-right: ;
-}
-.thumb2{
-    background-image: url(./image/link02.b7f7bba.jpg) no-repeat;
-    width: 100%;
-    height: 450px;
-}
-.thumb3{
-    background-image: url(./image/link03.73d78ef.jpg) no-repeat;
-    width: 100%;
-    height: 450px;
-}
-.link_list .txtbox .tit{
-    display: inline-block;
+.link li:last-child{margin-right: 0;}
+.link li span{
     font-size: 21px;
     font-weight: 700;
-    padding-right: 28px;
-}   
+}
+.link li p{
+    font-size: 15px;
+    margin-top: 7px;
+}
+
+/* yellowBox */
+.yellowBox{
+    position: relative;
+}
+.box1{
+    border: 1px solid #ffd44a;
+    background-color: #ffd44a;
+    width: 1114px;
+    height: 338px;
+}
+.box1 p{
+    font-size: 28px;
+    font-weight: 500;
+}
+.box1 em{
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+.box2{
+    position: absolute;
+    top: 102px;
+    right: 0px;
+}
+
+ /* main notice */
+ .main-notice{
+    background-color: #f7f8f9;
+ }
