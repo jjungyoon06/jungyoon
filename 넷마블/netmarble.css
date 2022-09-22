@@ -35,8 +35,21 @@ a:link, a:visited{text-decoration: none; color: #333;}
 .link a:last-child{
     margin-right: 0px;
 }
-.link .sentence{
-    padding: ;
-}
 .link h3{padding-top: 30px;}
 .link p{padding-top: 15px;}
+
+/* 재단활동 */
+.box{
+    border: 1px solid #ffd44a;
+    background-color: #ffd44a;
+    width: 1114px;
+    height: 338px;
+    position: relative;
+}
+.box img{
+    position: absolute;
+    top: 102px;
+    right: 0;
+
+
+}
