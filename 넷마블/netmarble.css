@@ -1,0 +1,42 @@
+/* reset */
+*{margin: 0; padding: 0;}
+html,body{height: 100%;}
+ul,li{list-style: none;}
+a:link, a:visited{text-decoration: none; color: #333;}
+.clearfix::after{clear: both; display: block; content: "";}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* navbar */
+.navWrap{width: 100%; position: fixed; background: white; padding: 30px;}
+.logo{float: left;}
+.gnb{float: right;}
+.gnb li{float: left; width: 150px;}
+.gnb li a{color: black; font-size: 30px;}
+
+/* slide */
+.slide{height: 100vh; background-color:  green;}
+
+/* home */
+.title{background-color: pink;}
+.title_1{float: left; font-size: 44px; font-weight: 700;}
+.title_2{float: right; font-size: 18px;}
+
+
+/* link */
+.link a{
+    float: left;
+    width: calc( (100% - 40px) / 3);
+    margin-right: 20px;
+}
+.link a:last-child{
+    margin-right: 0px;
+}
+.link .sentence{
+    padding: ;
+}
+.link h3{padding-top: 30px;}
+.link p{padding-top: 15px;}
