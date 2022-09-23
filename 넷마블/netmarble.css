@@ -21,7 +21,7 @@ a:link, a:visited{text-decoration: none; color: #333;}
 .slide{height: 100vh; background-color:  green;}
 
 /* home */
-.title{background-color: pink;}
+.title{padding: 160px 0px;}
 .title_1{float: left; font-size: 44px; font-weight: 700;}
 .title_2{float: right; font-size: 18px;}
 
@@ -30,14 +30,16 @@ a:link, a:visited{text-decoration: none; color: #333;}
 .link a{
     float: left;
     width: calc( (100% - 40px) / 3);
+}
+.link ul li{
     margin-right: 20px;
 }
 .link a:last-child{
     margin-right: 0px;
 }
-.link h3{padding-top: 30px;}
-.link p{padding-top: 15px;}
-
+.link .txtbox{
+    padding: 20px 16px 0px;
+}
 /* 재단활동 */
 .box{
     border: 1px solid #ffd44a;
@@ -45,11 +47,19 @@ a:link, a:visited{text-decoration: none; color: #333;}
     width: 1114px;
     height: 338px;
     position: relative;
+    margin-top: 30px;
 }
-.box img{
+.box .img{
+    width: 592px;
+    height: 360px;
     position: absolute;
     top: 102px;
     right: 0;
-
-
 }
+
+/* 재단소식 */
+.title2{
+    margin-top: 160px;
+}
+.category{float: right;}
+.category li{float: left;}
