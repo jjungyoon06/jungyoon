@@ -21,35 +21,41 @@ a:link, a:visited{text-decoration: none; color: #333;}
 .slide{height: 100vh; background-color:  green;}
 
 /* home */
-.title{padding: 160px 0px;}
+.title{padding: 160px 0px; background-color: yellow;}
 .title_1{float: left; font-size: 44px; font-weight: 700;}
 .title_2{float: right; font-size: 18px;}
 
 
 /* link */
-.link a{
+.link li{
     float: left;
     width: calc( (100% - 40px) / 3);
 }
 .link ul li{
     margin-right: 20px;
+    background-color: pink;
 }
-.link a:last-child{
+.link li img{
+    width: 100%;
+}
+.link li:last-child{
     margin-right: 0px;
 }
 .link .txtbox{
     padding: 20px 16px 0px;
 }
 /* 재단활동 */
+.sec1{
+    position: relative;
+}
 .box{
     border: 1px solid #ffd44a;
     background-color: #ffd44a;
     width: 1114px;
     height: 338px;
-    position: relative;
     margin-top: 30px;
 }
-.box .img{
+.img{
     width: 592px;
     height: 360px;
     position: absolute;
@@ -62,4 +68,36 @@ a:link, a:visited{text-decoration: none; color: #333;}
     margin-top: 160px;
 }
 .category{float: right;}
-.category li{float: left;}
+.category li{
+    float: left; padding: 0px 24px; font-size: 14px; font-weight: 500;
+    border: 1px solid gray; border-radius: 15px;
+}
+
+/* footer */
+.footer_inner{
+    float: left;
+    background-color: black;
+    width: 100%;
+}
+.footer_inner .copyright{
+    margin: 26px 0px 0px;
+    color: lightgray;
+}
+.footer_inner .site li{
+    margin: 46px 0px 0px;
+}
+.footer_inner .site li a{
+    float: left;
+    color: white;
+    margin-right: 15px;
+}
+.footer_inner .family{
+    float: right;
+    border: 1px solid gray;
+}
+.footer_inner .mobile{
+    float: right;
+}
+.footer_inner .mobile li{
+    float: left;
+}
