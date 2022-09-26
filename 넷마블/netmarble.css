@@ -49,7 +49,7 @@ a:link, a:visited{text-decoration: none; color: #333;}
 .link li:last-child{
     margin-right: 0px;
 }
-.link .txtbox{
+.link .txt{
     padding: 20px 16px 0px;
 }
 /* 재단활동 */
