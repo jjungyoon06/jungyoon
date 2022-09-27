@@ -120,8 +120,14 @@ a:link, a:visited{text-decoration: none; color: black;}
 .footer_left{
     float: left;
 }
-.footer_left .addr{
-    padding: 20px 5px 9px;
+.footer_left .footer_link :first-child{
+    padding: 0px 15px 0px 5px;
+}
+.footer_left .footer_link :last-child{
+    padding: 0px 15px;
+}
+.footer_left .addr p{
+    padding: 20px 5px 0px;
 }
 .footer_left .copyright{
     padding: 20px 0px 0px 5px;
@@ -138,6 +144,7 @@ a:link, a:visited{text-decoration: none; color: black;}
 }
 .footer_right .sns{
     margin-top: 20px;
+    text-align: right;
 }
 .footer_right .sns a{
     margin-left: 10px;
