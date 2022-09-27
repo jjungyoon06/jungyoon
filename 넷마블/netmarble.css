@@ -80,11 +80,9 @@ a:link, a:visited{text-decoration: none; color: #333;}
     top: 102px;
     right: 0;
 }
-
 /* 재단소식 */
 .title2{
     margin-top: 160px;
-    background-color: #9e9a9a;
 }
 .category{float: right; display: block;}
 .category li{
