@@ -1,0 +1,86 @@
+/* reset */
+html,body{height: 100%;}
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+ul,li{list-style: none;}
+a:link, a:visited{text-decoration: none; color: black;}
+.clearfix::after{content: ""; display: block; clear: both;}
+
+.container{
+    width: 1180px;
+    margin-left: 116px;
+    margin-right: 116px;
+}
+/* navbar */
+.navWrap{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navWrap .navbar ul li{
+    float: left;
+}
+.navWrap .navbar ul li a{
+    font-size: 26px;
+    margin: 0px 45px;
+}
+.navWrap .recruit{
+    font-size: 26px;
+}
+
+/* home */
+.home{
+    width: 100%;
+    height: 800px;
+    background-image: url(./image/main_banner_pc.png);
+}
+.toggle{
+    color: white;
+    text-align: center;
+}
+.toggle .st1{
+    font-size: 54px;
+}
+.toggle .st2{
+    font-size: 84px;
+}
+.toggle .st3{
+    font-size: 30px;
+    line-height: 50px;
+}
+
+/* position absolute일 시 relatuve 어디에?  */
+
+
+/* main */
+.company{
+    padding-top: 80px;
+}
+.company ul li{
+    float: left;
+    margin-right: 30px;
+}
+.company .area_link{
+    font-size: 20px;
+    padding: 0px 0px 30px 0px;
+}
+.company .item_title{
+    font-size: 18px;
+}
+.company .item_content{
+    font-size: 16px;
+}
+.company .item_price{
+    font-size: 40px;
+    float: left;
+}
+.company .item_changeUp{
+    float: right;
+}
+.company span{
+    float: right;
+}
+.company img{
+    width: 380px;
+    height: 240px;
+}
