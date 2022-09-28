@@ -107,8 +107,10 @@
             </div>
     </div>    
     <div class="job">
-        <p>가비아의 일과 사람들을 확인해보세요</p>
-        <a href="#">직무소개 바로가기</a>
+        <div class="jobbox">
+            <p>가비아의 일과 사람들을 확인해보세요</p>
+            <a href="#">직무소개 바로가기</a>
+        </div>
     </div>
     <!-- footer -->
     <div class="footer">
@@ -126,7 +128,15 @@
             </div>
         </div>
         <div class="footer_right">
-                <input type="text" placeholder="패밀리사이트">
+            <label>
+                <select id="familysite">
+                    <option value>패밀리사이트</option>
+                    <option value="#">하이웍스</option>
+                    <option value="#">가비아 라이브러리</option>
+                    <option value="#">IX서비스 KINX</option>
+                    <option value="#">가비아에즈</option>
+                </select>
+            </label>
                 <button type="button">바로가기</button>
             <div class="sns">
                 <a href="#"><img src="./image/footer_ico_facebook.svg" alt=""></a>
@@ -135,7 +145,6 @@
                 <a href="#"><img src="./image/footer_ico_naverpost.svg" alt=""></a>
             </div>
         </div>
-        
     </div>
 </body>    
     <script src="https://kit.fontawesome.com/b9c3c0b1e7.js" crossorigin="anonymous"></script>
