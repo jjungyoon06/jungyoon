@@ -8,17 +8,20 @@ a:link, a:visited{text-decoration: none; color: #333;}
 .container{
     width: 1280px;
     margin: 0 auto;
-    padding: 160px 32px;
 }
 
 /* navbar */
-.navWrap{width: 100%; position: fixed; background: white; padding: 30px; z-index: 0;}
+.navWrap{width: 100%; position: fixed; background: white; padding: 30px; z-index: 1;}
 .logo{float: left;}
 .gnb{float: right;}
 .gnb li{float: left; width: 150px;}
 .gnb li a{color: black; font-size: 30px;}
 
 /* swiper */
+.slide{
+    position: relative;
+    z-index: 0;
+}
 .swiper{
     width: 100%;
     height: 100vh;
@@ -29,7 +32,13 @@ a:link, a:visited{text-decoration: none; color: #333;}
     height: 100%;
     object-fit: cover;
   }
-
+.swiper-slide{
+    position: relative;
+}
+.slidetxt{
+    position: absolute;
+    top: 50%;
+}
 /* home */
 .title_1{float: left; font-size: 44px; font-weight: 700; position: relative;}
 .title_1::after{

@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>넷마블</title>
     <link rel="stylesheet" href="./netmarble.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.css" integrity="sha512-15OzXDrYC/wTgcjNDIx6+2LiAHCPnS9DiKQj/dhgdRMpdW+W4AoSjxism+gRaDobBaFN+UONPGic1ttu5mpWxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.css"
+        integrity="sha512-15OzXDrYC/wTgcjNDIx6+2LiAHCPnS9DiKQj/dhgdRMpdW+W4AoSjxism+gRaDobBaFN+UONPGic1ttu5mpWxg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- navbar -->
-    <div class="navWrap container">
+    <div class="navWrap">
+
+    
+    <div class="container">
         <div class="navbar">
             <div class="logo">
                 <h1><a href="#">넷마블</a></h1>
@@ -26,37 +31,66 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./image/banner01.jpg" alt="">
-                <h1>게임소통학교</h1>
-                <p>게임으로 소통하고 게임으로 가까워지는 가족</p>
-            </div>
-          <div class="swiper-slide">
-            <img src="./image/banner02.jpg" alt="">
-                <h1>전국 장애학생 <br> e페스티벌</h1>
-                <p>게임 안에서 하나 되는 모두의 축제</p>
-            </div>
-            <div class="swiper-slide">
-                <img src="./image/banner03.jpg" alt="">
-                    <h1>게임아카데미</h1>
-                    <p>미래의 꿈 게임에 담다</p>
+    <div class="slide">
+
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./image/banner01.jpg" alt="">
+                    <div class="container">
+                        <div class="slidetxt">
+                            <h1>게임소통학교</h1>
+                            <p>게임으로 소통하고 게임으로 가까워지는 가족</p>
+                        </div>
+                    </div>
                 </div>
-            <div class="swiper-slide">
-            <img src="./image/banner04.jpg" alt="">
-                <h1>어깨동무문고</h1>
-                <p>다름을 이해하는 모두의 동화</p>
+                <div class="swiper-slide">
+                    <img src="./image/banner02.jpg" alt="">
+                    <div class="container">
+                        <div class="slidetxt">
+                            <h1>전국 장애학생 <br> e페스티벌</h1>
+                            <p>게임 안에서 하나 되는 모두의 축제</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/banner03.jpg" alt="">
+                    <div class="container">
+                        <div class="slidetxt">
+                            <h1>게임아카데미</h1>
+                            <p>미래의 꿈 게임에 담다</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/banner04.jpg" alt="">
+                    <div class="container">
+                        <div class="slidetxt">
+                            <h1>어깨동무문고</h1>
+                            <p>다름을 이해하는 모두의 동화</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/banner05.jpg" alt="">
+                    <div class="container">
+                        <div class="slidetxt">
+                             <h1>견학프로그램</h1>
+                            <p>나의 게임 산업 탐방기</p>
+                        </div>
+                    </div>
+                   
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img src="./image/banner05.jpg" alt="">
-                    <h1>견학프로그램</h1>
-                    <p>나의 게임 산업 탐방기</p>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
     </div>
     <!-- home -->
     <div class="title container clearfix">
@@ -109,18 +143,19 @@
     <div class="title2 container">
         <div class="clearfix">
             <div class="title_1">
-            <p>재단소식</p>
+                <p>재단소식</p>
             </div>
             <div class="category">
-            <ul class="clearfix">
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">뉴스룸</a></li>
-                <li><a href="#">소셜미디어</a></li>
-            </ul>
+                <ul class="clearfix">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">뉴스룸</a></li>
+                    <li><a href="#">소셜미디어</a></li>
+                </ul>
             </div>
         </div>
-        
+
         <div class="link">
+            <!-- float 버리고 swiper로 다시 작성 -->
             <ul class="clearfix">
                 <li>
                     <a href="#">
@@ -150,12 +185,12 @@
                     </a>
                 </li>
             </ul>
-        </div>     
+        </div>
     </div>
     <!-- footer -->
     <div class="foot">
-    <div class="footer container clearfix">
-        <div class="footer_inner">
+        <div class="footer container clearfix">
+            <div class="footer_inner">
                 <a href="#"><img src="./image/bi-dark.9d78fda.png" alt=""></a>
                 <div class="family_site">
                     <ul class="family_list">
@@ -186,18 +221,21 @@
                         <li><a href="#"><img src="./image/download (2).png" alt=""></a></li>
                     </ul>
                 </div>
-        </div> 
-    </div> 
- </div> 
-  <!--swiper  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js" integrity="sha512-dPYTaB+Ip4gAl9vo6U0jSmI8v1AZKjPKH367mfo7pR5gLf1IKpjm3bIXIwm+MmYWEf0eiBEWSBqE+MdKUx0jfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+            </div>
+        </div>
+    </div>
+    <!--swiper  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"
+        integrity="sha512-dPYTaB+Ip4gAl9vo6U0jSmI8v1AZKjPKH367mfo7pR5gLf1IKpjm3bIXIwm+MmYWEf0eiBEWSBqE+MdKUx0jfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
+
 </html>
