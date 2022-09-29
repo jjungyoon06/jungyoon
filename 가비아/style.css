@@ -42,7 +42,6 @@ a:link, a:visited{text-decoration: none; color: black;}
     top: 50%;
     transform: translateY(-50%);
     color:white;
-    background: skyblue;
 }
 .st1{
     font-size: 54px;
@@ -69,10 +68,10 @@ a:link, a:visited{text-decoration: none; color: black;}
 .company_link{
     margin-bottom: 60px;
 }
-.company_intro li{
+.company_link li, .company_intro li{
     width: calc(( 100% - 60px ) / 3 );
 }
-.company_intro li:last-child{
+.company_link li:last-child, .company_intro li:last-child{
     margin-right: 0px;
 }
 .company .area_link{
