@@ -9,6 +9,9 @@ a:link, a:visited{text-decoration: none; color: #333;}
     width: 1280px;
     margin: 0 auto;
 }
+.pd150{
+    padding: 150px 0px;
+}
 
 /* navbar */
 .navWrap{width: 100%; position: fixed; background: white; padding: 30px; z-index: 1;}
@@ -64,7 +67,7 @@ a:link, a:visited{text-decoration: none; color: #333;}
 }
 .link li img:first-child{
     width: 413.32px;
-    height: 279.29px;
+    height: 450px;
 }
 .link li img{
     width: 100%;
@@ -113,7 +116,6 @@ a:link, a:visited{text-decoration: none; color: #333;}
 /* 재단소식 */
 .title2{
     margin-top: 160px;
-    background-color: lightgray;
 }
 .category{float: right; display: block;}
 .category li{
