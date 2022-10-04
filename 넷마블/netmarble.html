@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>넷마블</title>
     <link rel="stylesheet" href="./netmarble.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.css"
-        integrity="sha512-15OzXDrYC/wTgcjNDIx6+2LiAHCPnS9DiKQj/dhgdRMpdW+W4AoSjxism+gRaDobBaFN+UONPGic1ttu5mpWxg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -84,10 +85,11 @@
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
     <!-- home -->
-    <div class="title container clearfix pd150">
+    <div class="title container clearfix pd160">
         <p class="title_1">문화를 만들고 인재를 키우고 <br> 마음을 나눕니다</p>
         <p class="title_2">넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을 높여 가고자 <br> 다양한 공익 활동을 전개해 나가고 있습니다.</p>
     </div>
@@ -134,7 +136,8 @@
         </div>
     </div>
     <!-- 재단소식 -->
-    <div class="title2 container pd150">
+    <div class="news">
+         <div class="title2 container pd160">
         <div class="clearfix">
             <div class="title_1">
                 <p>재단소식</p>
@@ -147,40 +150,50 @@
                 </ul>
             </div>
         </div>
-
-        <div class="link">
-            <!-- float 버리고 swiper로 다시 작성 -->
-            <ul class="clearfix">
-                <li>
-                    <a href="#">
-                        <img src="./image/75f1ec08d4024494994f04c75e33ad9b_1655951509048_lp.jpg" alt=""></img>
-                        <div class="txt2">
-                            <h3>제 14회 게임콘서트 개최 안내</h3>
-                            <p>공지사항 2022.09.23</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./image/89c69fcefc60421192e547289fda9bbf_1663132574969_lp.jpg" alt=""> </img>
-                        <div class="txt2">
-                            <h3>넷마블게임박물관 건립준비캠페인</h3>
-                            <p>공지사항 2022.09.14</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./image/2fc7bca2fb5b4b598711919a7dbd1420_1660867099469_lp.jpg" alt=""></img>
-                        <div class="txt2">
-                            <h3>[게임소통학교] 도미노 영상 이벤트 결과 발표</h3>
-                            <p>공지사항 2022.08.18</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+        <div class="swiper-wrapper container">
+          <div class="news_swiper-slide">
+            <img src="./image/2fc7bca2fb5b4b598711919a7dbd1420_1660867099469_lp.jpg" alt="">
+                <div class="newstxt">
+                    <h3>제 14회 게임콘서트 개최 안내</h3>
+                    <h4>>>>9월 게임콘서트 참여하기 링크</h4>
+                    <p>공지사항 2022.09.23</p>
+                </div>
+            </div>
         </div>
+        <div class="news_swiper-slide">
+            <img src="./image/75f1ec08d4024494994f04c75e33ad9b_1655951509048_lp.jpg" alt="">
+                <div class="newstxt">
+                    <h3>제 14회 게임콘서트 개최 안내</h3>
+                    <h4>>>>9월 게임콘서트 참여하기 링크</h4>
+                    <p>공지사항 2022.09.23</p>
+                </div>
+           
+        </div>
+        <div class="news_swiper-slide">
+            <img src="./image/89c69fcefc60421192e547289fda9bbf_1663132574969_lp.jpg" alt="">
+                <div class="newstxt">
+                    <h3>제 14회 게임콘서트 개최 안내</h3>
+                    <h4>>>>9월 게임콘서트 참여하기 링크</h4>
+                    <p>공지사항 2022.09.23</p>
+                </div>
+        </div>
+        <div class="news_swiper-slide">
+            <img src="./image/2fc7bca2fb5b4b598711919a7dbd1420_1660867099469_lp.jpg" alt="">
+                <div class="newstxt">
+                    <h3>제 14회 게임콘서트 개최 안내</h3>
+                    <h4>>>>9월 게임콘서트 참여하기 링크</h4>
+                    <p>공지사항 2022.09.23</p>
+                </div>
+        </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+        
     </div>
+    </div>
+   
     <!-- footer -->
     <div class="foot">
         <div class="footer container clearfix">
@@ -218,17 +231,35 @@
             </div>
         </div>
     </div>
-    <!--swiper  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"
-        integrity="sha512-dPYTaB+Ip4gAl9vo6U0jSmI8v1AZKjPKH367mfo7pR5gLf1IKpjm3bIXIwm+MmYWEf0eiBEWSBqE+MdKUx0jfg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
 </body>
 
