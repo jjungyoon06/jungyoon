@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="./netmarble.css">
      <!-- Link Swiper's CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-      <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -151,17 +149,8 @@
             </div>
         </div>
         <!-- Swiper -->
-        <div class="swiper mySwiper">
-        <div class="swiper-wrapper container">
-          <div class="news_swiper-slide">
-            <img src="./image/2fc7bca2fb5b4b598711919a7dbd1420_1660867099469_lp.jpg" alt="">
-                <div class="newstxt">
-                    <h3>제 14회 게임콘서트 개최 안내</h3>
-                    <h4>>>>9월 게임콘서트 참여하기 링크</h4>
-                    <p>공지사항 2022.09.23</p>
-                </div>
-            </div>
-        </div>
+        <div class="news_swiper news_mySwiper">
+        <div class="news_swiper-wrapper container">
         <div class="news_swiper-slide">
             <img src="./image/75f1ec08d4024494994f04c75e33ad9b_1655951509048_lp.jpg" alt="">
                 <div class="newstxt">
@@ -252,7 +241,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".news_mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
         pagination: {
