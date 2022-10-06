@@ -223,7 +223,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <!-- 슬라이드 swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
         pagination: {
@@ -239,7 +239,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <!-- 재단소식 swiper -->
     <script>
       var swiper = new Swiper(".news_mySwiper", {
         slidesPerView: 3,
@@ -250,6 +250,21 @@
         },
       });
     </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 
 </html>
