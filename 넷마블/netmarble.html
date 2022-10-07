@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>넷마블</title>
     <link rel="stylesheet" href="./netmarble.css">
+    <link rel="stylesheet" href="./animate.css">
      <!-- Link Swiper's CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
@@ -87,12 +88,12 @@
         </div>
     </div>
     <!-- home -->
-    <div class="title container clearfix pd160">
-        <p class="title_1">문화를 만들고 인재를 키우고 <br> 마음을 나눕니다</p>
-        <p class="title_2">넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을 높여 가고자 <br> 다양한 공익 활동을 전개해 나가고 있습니다.</p>
+    <div class="title container clearfix pd230">
+        <p class="title_1 wow fadeInUp">문화를 만들고 인재를 키우고 <br> 마음을 나눕니다</p>
+        <p class="title_2 wow fadeInUp">넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을 높여 가고자 <br> 다양한 공익 활동을 전개해 나가고 있습니다.</p>
     </div>
     <!-- link -->
-    <div class="link container pd150">
+    <div class="link container pd230 wow fadeInUp">
         <ul class="clearfix">
             <li>
                 <a href="#">
@@ -124,7 +125,7 @@
         </ul>
     </div>
     <!-- yellow box -->
-    <div class="container sec1">
+    <div class="container sec1 wow fadeInUp pd230">
         <div class="box">
             <h2>우리는 <b>문화적 가치를 확산</b>하여 우리 사회의 <br> 미래 경쟁력을 높여갑니다</h2>
             <p>주요목적</p>
@@ -135,7 +136,7 @@
     </div>
     <!-- 재단소식 -->
     <div class="news">
-         <div class="title2 container pd160">
+         <div class="title2 container pd230">
         <div class="clearfix">
             <div class="title_1">
                 <p>재단소식</p>
@@ -264,6 +265,11 @@
             prevEl: ".swiper-button-prev",
           },
         });
+      </script>
+      <!-- wow -->
+      <script src="./wow.min.js"></script>
+      <script>
+        new WOW().init();
       </script>
 </body>
 

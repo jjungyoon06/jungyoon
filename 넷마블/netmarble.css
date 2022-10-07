@@ -9,8 +9,8 @@ a:link, a:visited{text-decoration: none; color: #333;}
     width: 1280px;
     margin: 0 auto;
 }
-.pd160{
-    padding: 160px 0px;
+.pd230{
+    padding: 230px 0px;
 }
 
 /* navbar */
@@ -106,19 +106,19 @@ a:link, a:visited{text-decoration: none; color: #333;}
 }
 .box h2{
     position: absolute;
-    top: 80px;
+    top: 340px;
     left: 50px;
 }
 .box p{
     position: absolute;
-    top: 160px;
+    top: 420px;
     left: 50px;
 }
 .img{
     width: 592px;
     height: 360px;
     position: absolute;
-    top: 102px;
+    top: 320px;
     right: 0;
 }
 /* 재단소식 */
@@ -133,9 +133,14 @@ a:link, a:visited{text-decoration: none; color: #333;}
 }
 .category{float: right; display: block;}
 .category li{
-    float: left; padding: 0px 24px; font-size: 14px; font-weight: 500;
-    border: 1px solid #f0f1f2; border-radius: 19px; background-color: #f0f1f2;
-    color: #1e1e1e; line-height: 38px; margin-left: 8px; height: 38px;
+    float: left; padding: 0px 30px; font-size: 22px; font-weight: 500;
+    margin-left: 8px; height: 38px; line-height: 38px;
+}
+.category li a{
+    color: gray;
+}
+.category li a:hover{
+    color: #1e1e1e; background-color: #d9dbdb; border-radius: 20px; padding: 10px 20px;
 }
 .news_swiper{
     padding-top: 50px;
