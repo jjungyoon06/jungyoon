@@ -25,18 +25,25 @@ a:link, a:visited{text-decoration: none; color: #333;}
     position: relative;
     z-index: 0;
 }
-.swiper{
+.slide .swiper{
     width: 100%;
     height: 100vh;
 }
-.swiper-slide img {
+.slide .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-.swiper-slide{
+.slide .swiper-slide{
     position: relative;
+}
+.slide .btnWrap{
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    gap:20px
 }
 .slidetxt{
     position: absolute;
@@ -44,7 +51,7 @@ a:link, a:visited{text-decoration: none; color: #333;}
     color: white;
     font-size: 40px;
 }
-.swiper-pagination{
+.slide .swiper-pagination{
     color: white;
     font-size: 20px;
     position: absolute;
@@ -93,7 +100,7 @@ a:link, a:visited{text-decoration: none; color: #333;}
     padding-top: 100px;
     color: gray;
 }
-/* 재단활동 */
+/* �щ떒�쒕룞 */
 .sec1{
     position: relative;
 }
@@ -121,7 +128,7 @@ a:link, a:visited{text-decoration: none; color: #333;}
     top: 320px;
     right: 0;
 }
-/* 재단소식 */
+/* �щ떒�뚯떇 */
 .news{
     background-color: #f0f1f2;
 }
@@ -145,23 +152,21 @@ a:link, a:visited{text-decoration: none; color: #333;}
 .news_swiper{
     padding-top: 50px;
 }
-.news_swiper-slide{
-    display: inline-block;
-    width: 400px;
-    height: 450px;
-    background-color: white;
-    margin-right: 20px;
-}
-.news_swiper-slide:last-child{
-    margin-right: 0px;
-}
-.news_swiper-slide img {   
+
+.news_swiper .swiper-slide{}
+.news_swiper .swiper-slide img{
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
+}
+
+.news_swiper .swiper-slide .topImg{
+    width: 100%;
+    padding-top: 60%;
+    background: skyblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .newstxt{
     font-size: 20px;
     text-align: center;
