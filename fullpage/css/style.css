@@ -1,0 +1,32 @@
+/* reset */
+html,body{height: 100%;}
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+ul,li{list-style: none;}
+a:link, a:visited{text-decoration: none; color: black;}
+
+.container{
+    width: 1024px;
+    height: 646px;
+    margin: 0 172px;
+    padding: 165px 50px 0px;
+}
+
+
+.section{
+    background-color:rgb(42, 193, 188);
+}
+.section img{
+    width: 462px;
+    height: 238.14px;
+}
+.section_detail{
+    display: flex;
+}
+.section .txtWrap{
+    margin-top: 15px;
+    color: white;
+}
+.backgroundImage{
+    width: 634.88px;
+    height: 634.88px;
+}
