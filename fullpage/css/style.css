@@ -29,8 +29,7 @@ a:link, a:visited{text-decoration: none; color: black;}
 }
 .navbar .app_download img{
     width: 150px;
-    height: 80px;
-    color: white;
+    height: 50px;
 }
 .download{
     display: flex;
