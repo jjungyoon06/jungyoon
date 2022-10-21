@@ -1,0 +1,41 @@
+// color 
+$fcolor1:#333;
+$pColor1:#eee;
+
+
+*{margin: 0;padding: 0;}
+a:link,a:visited{text-decoration: none;color:$fcolor1}
+ul,li{list-style: none;}
+
+// nav
+.navTop{
+    position: fixed;z-index: 1;
+    width: 100%;
+    background-color: $pColor1;
+    display: flex;
+    h1{}
+    .gnb{
+       margin-left: auto;
+       ul{
+        display: flex;height: 100%;
+        } 
+       li{
+        height: 100%;
+        &:hover,&.active{background: skyblue;}
+        a{
+            height: 100%;
+            padding: 0 30px;
+            display: flex;justify-content: center;align-items: center;
+        }
+       }
+    }
+}
+
+
+
+
+.wrap{
+    width: 100%;height: 100vh;
+    display: flex;justify-content: center;align-items: center;
+}
+
