@@ -22,7 +22,8 @@ h2 {
   position: fixed;
   z-index: 1;
   width: 100%;
-  background-color: #eee;
+  padding: 20px 0px;
+  background-color: transparent;
   display: flex;
 }
 .navTop .gnb {
@@ -36,10 +37,13 @@ h2 {
   height: 100%;
 }
 .navTop .gnb li:hover, .navTop .gnb li.active {
-  background: skyblue;
+  background: transparent;
+  border-radius: 10px;
 }
 .navTop .gnb li a {
   height: 100%;
+  font-size: 20px;
+  color: white;
   padding: 0 30px;
   display: flex;
   justify-content: center;
@@ -193,9 +197,9 @@ h2 {
   overflow: hidden;
 }
 .section.page1 {
-  background-image: url(../images/bg1.jpg);
+  background-image: url(../image/main_04@2x.jpg);
 }
-.section.page1 .scrollBtn {
+.scrollBtn {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -219,13 +223,16 @@ h2 {
   }
 }
 .section.page2 {
-  background-image: url(../images/bg2.jpg);
+  background-color: rgb(42, 193, 188);
+  background-image: url(../image/img-present@2x.png);
 }
 .section.page3 {
-  background-image: url(../images/bg3.jpg);
+  background-color: rgb(42, 193, 188);
+  background-image: url(../image/bmart_rider@2x.png);
 }
 .section.page4 {
-  background-image: url(../images/bg4.jpg);
+  background-color: rgb(42, 193, 188);
+  background-image: url(../image/img-people@2x.png);
 }
 .section.page4 .container {
   transform: translateY(-200px);
