@@ -37,7 +37,7 @@ h2 {
   height: 100%;
 }
 .navTop .gnb li:hover, .navTop .gnb li.active {
-  background: transparent;
+  background: rgb(57, 206, 203);
   border-radius: 10px;
 }
 .navTop .gnb li a {
@@ -193,11 +193,12 @@ h2 {
 .section {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1000px 800px;
   overflow: hidden;
 }
 .section.page1 {
   background-image: url(../image/main_04@2x.jpg);
+  background-size: cover;
 }
 .scrollBtn {
   position: absolute;
@@ -224,11 +225,11 @@ h2 {
 }
 .section.page2 {
   background-color: rgb(42, 193, 188);
-  background-image: url(../image/img-present@2x.png);
+  background-image: url(../image/img-shoppinglive_re.png);
 }
 .section.page3 {
   background-color: rgb(42, 193, 188);
-  background-image: url(../image/bmart_rider@2x.png);
+  background-image: url(../image/img-present@2x.png);
 }
 .section.page4 {
   background-color: rgb(42, 193, 188);
@@ -237,3 +238,8 @@ h2 {
 .section.page4 .container {
   transform: translateY(-200px);
 }/*# sourceMappingURL=style01.css.map */
+
+.sector img{
+  width: 600px;
+  height: 300px;
+}
