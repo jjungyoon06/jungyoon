@@ -1,3 +1,4 @@
+/* reset */
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +18,7 @@ h2 {
   color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
+/* navbar */
 .navTop {
   position: fixed;
   z-index: 1;
@@ -49,6 +50,10 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.navTop .gnb img{
+  width: 200px;
+  height: 70px;
+}
 
 .wrap {
   width: 100%;
@@ -57,11 +62,12 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+/* page 큰 틀 */
 .wrap div {
   position: absolute;
 }
 .wrap div.txt1 {
-  transform: translateY(200px);
+  transform: translateY(100px);
   opacity: 0;
 }
 .wrap div.txt2 h2:nth-child(1) {
@@ -70,9 +76,6 @@ h2 {
 }
 .wrap div.txt2 h2:nth-child(2) {
   transform: translateX(200px);
-  opacity: 0;
-}
-.wrap div.txt3 {
   opacity: 0;
 }
 @-webkit-keyframes txtAni1 {
@@ -162,27 +165,24 @@ h2 {
 
 .page1 .txtWrap {
   transform: translateY(100px);
-  transition: 0.3s;
+  transition: 1s;
   opacity: 0;
 }
 .page1 .txtWrap.move {
   transform: translateY(0);
   opacity: 1;
 }
-.page1 #myVideo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -o-object-fit: cover;
-     object-fit: cover;
+.page1 ul li{
+  display: inline;
+}
+.page1 .download img{
+  background-color: white;
+  border-radius: 15px;
 }
 
 .page2 .txtWrap {
   transform: translateY(-100px);
-  transition: 0.3s;
+  transition: 2s;
   opacity: 0;
 }
 .page2 .txtWrap.move {
@@ -193,7 +193,7 @@ h2 {
 .section {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 1000px 800px;
+  background-size: 1080px 800px;
   overflow: hidden;
 }
 .section.page1 {
@@ -225,7 +225,7 @@ h2 {
 }
 .section.page2 {
   background-color: rgb(42, 193, 188);
-  background-image: url(../image/img-shoppinglive_re.png);
+  background-image: url(../image/img-people@2x.png);
 }
 .section.page3 {
   background-color: rgb(42, 193, 188);
@@ -233,13 +233,50 @@ h2 {
 }
 .section.page4 {
   background-color: rgb(42, 193, 188);
-  background-image: url(../image/img-people@2x.png);
+  background-image: url(../image/img-flag@2x.png);
 }
 .section.page4 .container {
   transform: translateY(-200px);
 }/*# sourceMappingURL=style01.css.map */
 
+.page4 .btn{
+  border: 1px solid white;
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 35px;
+  transition: 0.3s;
+}
+.page4 .btn:hover{
+  color: white;
+  border: rgb(57, 206, 203);
+  background-color: rgb(57, 206, 203);
+}
+/* footer */
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+.footer .link ul li a{
+  padding: 7px;
+}
 .sector img{
   width: 600px;
   height: 300px;
+}
+.sns{
+  padding: 40px 0px;
+}
+.sns img{
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.copyright {
+  color: gray;
+  font-size: 20px;
+  padding: 3px;
 }

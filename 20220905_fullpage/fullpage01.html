@@ -1,102 +1,133 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fullpage01</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style01.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
 </head>
-<body>
-<div class="navTop px-5">
-    <h1><a href="#"><img src="./image/logo@2x.png" alt=""></a></h1>
-    <nav class="gnb">
-        <ul>
-            <li data-menuanchor="m1st"><a href="#m1st">Home</a></li>
-            <li data-menuanchor="m2st"><a href="#m2st">Live</a></li>
-            <li data-menuanchor="m3st"><a href="#m3st">Coupon</a></li>
-            <li data-menuanchor="m4st"><a href="#m4st">Pay</a></li>
-        </ul>
-    </nav>
-</div>
-<div id="fullpage">
-    <!-- # 1 -->
-    <div class="section page1" data-anchor="m1st">
 
-        <div class="wrap">
-            <!-- .wrap w100% h100vh -->
-            <div class="container txtWrap">
-                <img src="./image/ctn01_text_02@2x.png" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 offset-md-8 vView">
-                            <div><a href="#"><img src="./image/img-appstore-default@2x.png" alt=""></a></div>
+<body>
+    <div class="navTop px-5">
+        <h1><a href="#"><img src="./image/logo@2x.png" alt=""></a></h1>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#"><img src="./image/btn-download-white@3x.png" alt=""></a></li>
+                <li data-menuanchor="m1st"><a href="#m1st">Home</a></li>
+                <li data-menuanchor="m2st"><a href="#m2st">Order</a></li>
+                <li data-menuanchor="m3st"><a href="#m3st">Present</a></li>
+                <li data-menuanchor="m4st"><a href="#m4st">Pay</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="fullpage">
+        <!-- # 1 -->
+        <div class="section page1" data-anchor="m1st">
+            <div class="wrap">
+                <!-- .wrap w100% h100vh -->
+                <div class="container txtWrap">
+                    <img src="./image/ctn01_text_02@2x.png" alt="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 offset-md-8 vView download">
+                                <ul>
+                                    <li><a href="#"><img src="./image/img-appstore-default@2x.png" alt=""></a></li>
+                                    <li><a href="#"><img src="./image/img-googleplay-default@2x.png" alt=""></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="scrollBtn">
-            <a href="#m2st"><img src="./image/scroll@2x.png" alt=""></a>
-        </div>
-    </div>
-    <!-- # 2 -->
-    <div class="section page2" data-anchor="m2st">
-        <div class="container text-center txtWrap sector">
-            <img src="./image/ctn06_text_01@2x.png" alt="">
-        </div>
-    </div>
-
-    <!-- # 3 -->
-    <div class="section page3"  data-anchor="m3st">
-        <div class="wrap">
-            <div class="txt1"><h2>너에게 밥을 보낸다!</h2></div>
-            <div class="txt2 text-center">
-                <h2>지금 밥 한끼 보내주고 싶은 분께</h2>
-                <h2>배민상품권을 선물하세요!</h2>
-            </div>
-            <div class="txt3">
-                <h2>많은 정보와 광고 속,</h2>
-                <h2>나를 위한 게 뭘까?</h2>
+            <div class="scrollBtn">
+                <a href="#m2st"><img src="./image/scroll@2x.png" alt=""></a>
             </div>
         </div>
-        <div class="scrollBtn">
-            <a href="#m3st"><img src="./image/scroll@2x.png" alt=""></a>
+        <!-- # 2 -->
+        <div class="section page2" data-anchor="m2st">
+            <div class="container text-center txtWrap sector">
+                <img src="./image/ctn02_text_01@2x.png" alt="">
+            </div>
+            <div class="scrollBtn">
+                <a href="#m2st"><img src="./image/scroll@2x.png" alt=""></a>
+            </div>
         </div>
-    </div>
-
-    <!-- # 4 -->
-    <div class="section page4"  data-anchor="m4st">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 offset-md-3 text-center text-md-start p-5 p-md-0 sector">
-                    <img src="./image/ctn03_text_02@2x.png" alt="">
-                    <a href="#!" class="btn btn-primary">배민페이 만들러가기</a>
+        <!-- # 3 -->
+        <div class="section page3" data-anchor="m3st">
+            <div class="wrap">
+                <div class="txt1">
+                    <h2>너에게 밥을 보낸다!</h2>
+                </div>
+                <div class="txt2 text-center">
+                    <h2>지금 밥 한끼 보내주고 싶은 분께</h2>
+                    <h2>배민상품권을 선물하세요!</h2>
+                </div>
+            </div>
+            <div class="scrollBtn">
+                <a href="#m3st"><img src="./image/scroll@2x.png" alt=""></a>
+            </div>
+        </div>
+        <!-- # 4 -->
+        <div class="section page4" data-anchor="m4st">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 text-md-start p-5 p-md-0 sector">
+                        <img src="./image/ctn03_text_02@2x.png" alt="">
+                        <a href="#!" class="btn">배민페이 만들기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scrollBtn">
+                <a href="#m4st"><img src="./image/scroll@2x.png" alt=""></a>
+            </div>
+        </div>
+        <!-- footer  -->
+        <div class="section fp-auto-height">
+            <div class="container py-5">
+                <div class="footer">
+                    <div class="link">
+                        <ul>
+                            <li><a href="#"><img src="./image/link_woowahan@2x.png" alt=""></a></li>
+                            <li><a href="#"><img src="./image/link-store@2x.png" alt=""></a></li>
+                            <li><a href="#"><img src="./image/link-rider@2x.png" alt=""></a></li>
+                            <li><a href="#"><img src="./image/link_ceosite@2x.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="sns text-center">
+                        <a href="#"><img src="./image/icon-facebook@2x.png" alt=""></a>
+                        <a href="#"><img src="./image/icon-blog@2x.png" alt=""></a>
+                        <a href="#"><img src="./image/icon-instagram@2x.png" alt=""></a>
+                        <a href="#"><img src="./image/icon-youtube@2x.png" alt=""></a>
+                    </div>
+                    <div class="app text-center">
+                        <img src="./image/footer-title@2x.png" alt="">
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>(주)우아한형제들</p>
+                    <p>서울시 송파구 위례성대로 2 장은빌딩 2층</p>
+                    <p>사업자번호 : 120-87-65763</p>
+                    <p>통신판매업 : 서울 송파-0515</p>
                 </div>
             </div>
         </div>
-        <div class="scrollBtn">
-            <a href="#m4st"><img src="./image/scroll@2x.png" alt=""></a>
-        </div>
     </div>
 
-    <!-- footer  -->
-    <div class="section fp-auto-height">
-        <div class="container py-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro asperiores est maiores obcaecati voluptates neque nesciunt harum fugit voluptatem sed?
-        </div>
-    </div>
-
-
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-<script src="js/script01.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="js/script01.js"></script>
 </body>
+
 </html>
