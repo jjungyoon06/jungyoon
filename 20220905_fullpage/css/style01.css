@@ -189,6 +189,25 @@ h2 {
   transform: translateY(0);
   opacity: 1;
 }
+.page2 .order{
+  width: 250px;
+  text-align: center;
+  padding: 50px 0px;
+  border: 1px soild white;
+  border-radius: 30px;
+  background-color: white;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  left: 40%;
+  bottom: 200px;
+}
+.page2 .order:hover{
+  color: white;
+  border: 1px solid rgb(57, 206, 203);
+  background-color: rgb(57, 206, 203);
+  transform: scale(1);
+}
 
 .section {
   background-position: center;
@@ -226,14 +245,17 @@ h2 {
 .section.page2 {
   background-color: rgb(42, 193, 188);
   background-image: url(../image/img-people@2x.png);
+  background-position: 100% 100%;
 }
 .section.page3 {
   background-color: rgb(42, 193, 188);
   background-image: url(../image/img-present@2x.png);
+  background-position: 100% 100%;
 }
 .section.page4 {
   background-color: rgb(42, 193, 188);
   background-image: url(../image/img-flag@2x.png);
+  background-position: 100% 100%;
 }
 .section.page4 .container {
   transform: translateY(-200px);
@@ -242,12 +264,12 @@ h2 {
 .page4 .btn{
   border: 1px solid white;
   background-color: white;
+  margin: 30px;
   width: 200px;
-  height: 50px;
+  padding: 30px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: bold;
-  line-height: 35px;
   transition: 0.3s;
 }
 .page4 .btn:hover{
@@ -260,23 +282,20 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-.footer .link ul li a{
-  padding: 7px;
-}
 .sector img{
   width: 600px;
   height: 300px;
-}
-.sns{
-  padding: 40px 0px;
-}
-.sns img{
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
 }
 .copyright {
   color: gray;
   font-size: 20px;
   padding: 3px;
+}
+.sns li{
+  float: left;
+  padding-right: 10px;
+}
+.footer_link ul li{
+  float: left;
+  padding-right: 30px;
 }
