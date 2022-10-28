@@ -165,19 +165,21 @@ h2 {
 
 .page1 .txtWrap {
   transform: translateY(100px);
-  transition: 1s;
+  transition: 2s;
   opacity: 0;
 }
 .page1 .txtWrap.move {
-  transform: translateY(0);
+  transform: translateY(-300px);
   opacity: 1;
 }
-.page1 ul li{
-  display: inline;
+.page1 .download a img{
+  transform: translateY(100px);
+  transition: 2s;
+  opacity: 0;
 }
-.page1 .download img{
-  background-color: white;
-  border-radius: 15px;
+.page1 .download a img.move {
+  transform: translateY(-100px);
+  opacity: 1;
 }
 
 .page2 .txtWrap {
@@ -292,8 +294,22 @@ h2 {
   padding: 3px;
 }
 .sns li{
-  float: left;
-  padding-right: 10px;
+  display: flex;
+  background-color: skyblue;
+  height: 100%;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.footer ul{
+  margin-left: auto;
+  display: flex;
+  background-color: pink;
 }
 .footer_link ul li{
   float: left;
