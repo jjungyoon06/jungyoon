@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-
+*{font-family: 'Noto Sans KR', sans-serif;}
 :root{
     --font-color1:#333;
     --font-color2:#eee;
@@ -10,7 +10,17 @@
 a:link,a:visited{text-decoration: none;color:var(--font-color1)}
 ul,li{list-style: none;margin: 0;padding: 0;}
 
-
+/* navbar */
+.navbar{
+    background-color: black;
+    margin-bottom: 30px;
+}
+.navbar-brand{
+    font-size: 50px;
+}
+.nav-link{
+    font-size: 25px;
+}
 .navbar-toggler{border: 0 none}
 .navbar .bg-color{
     position: absolute;
@@ -20,34 +30,39 @@ ul,li{list-style: none;margin: 0;padding: 0;}
     border-radius: 40px;
 }
 
+.intro{
+    font-size: 45px;
+    padding: 20px 0px;
+}
+/* banner */
 .banner{box-shadow:var(--shadow-color2);}
 .banner a{color:var(--font-color2)}
 
+.banner1{padding: 50px 0px;}
 .banner1 > .row > div{cursor: pointer;}
 .banner1 .card{
     box-shadow:var(--shadow-color2);
     border: 0 none;
 }
 
+/* adven */
 .adven .img1st{top: 0;right: 0;box-shadow:var(--shadow-color2);}
 .adven .img2st{bottom: 0;box-shadow:var(--shadow-color2);}
 .adven .img4st{top: 0;right: 0;box-shadow:var(--shadow-color2);width: 300px;}
 .adven .img3st{bottom: 0;box-shadow:var(--shadow-color2);width: 500px;}
+.adven h3{font-size: 40px;}
+
 
 .card-title{
     text-align: center;
 }
 
 .adven .imgView{height: 400px;}
-.adven .icon{
-    width: 80px;height: 80px;
-    border-radius:50%;box-shadow:var(--shadow-color2);
+.title{
+    font-size: 30px;
 }
-
 .contact{
-    background: url(../images/contact-cover.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-color: var(--font-color1);
 }
 
 .footer{background: #eee;}
